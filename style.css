@@ -1,15 +1,15 @@
 header {
-    background-color: #ffffff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 0 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 15px;
 
 }
 
 body {
-    background-color: beige;
+  background-color: beige;
 }
 
 /* mobile */
@@ -37,6 +37,14 @@ nav {
 
 .nav-list.is-open {
   display: block;
+}
+
+
+section {
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); */
+  padding: 10px;
+  margin: 10px;
 }
 
 
