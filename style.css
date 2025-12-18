@@ -124,6 +124,21 @@ form {
   width: 40%;
 }
 
+.skill-checkBox {
+  position: absolute;
+  top: -0.1px;
+  left: 195px;
+  width: 25px;
+  height: auto;
+}
+
+.skill-checkmark {
+  position: absolute;
+  top: -1px;
+  left: 204px;
+  width: 25px;
+  height: auto;
+}
 
 @media (min-width: 768px) {
 
