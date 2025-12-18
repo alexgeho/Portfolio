@@ -8,6 +8,10 @@ header {
 
 }
 
+section h2 {
+  font-weight: normal;
+}
+
 body {
   background-color: beige;
 }
@@ -106,6 +110,10 @@ form {
   color: white;
 }
 
+.hero-text h1 {
+font-weight: normal;
+}
+
 .skills-layout {
   display: flex;
   align-items: center;
@@ -158,6 +166,38 @@ form {
   width: 25px;
   height: auto;
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.skill {
+  text-align: center;
+  cursor: default;
+}
+
+.skill img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.skill p {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+.skill:hover img {
+  transform: translateY(-4px) scale(1.04);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.12));
+}
+
+
 
 @media (min-width: 768px) {
 
