@@ -26,14 +26,13 @@
         <header>
             <nav class="topnav" aria-label="Main navigation">
                 <a href="#home" class="active">Logo</a>
-                <!-- Navigation links (hidden by default) -->
+
                 <div id="myLinks">
-                    <a href="#news">Skills</a>
+                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
-                    <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -97,11 +96,10 @@
 
                 <div class="skills-interactive">
 
-                    <!-- ASIDE = MENU -->
                     <aside class="skills-menu">
                         <button class="skills-tab active" data-target="tech">Tech Skills</button>
-                        <button class="skills-tab" data-target="philosophy">Philosophy</button>
-                        <button class="skills-tab" data-target="strategy">Strategy</button>
+                        <button class="skills-tab" data-target="philosophy">Architecture & Strategy</button>
+                        <button class="skills-tab" data-target="strategy">Focus</button>
                     </aside>
 
                     <div class="skills-panels">
@@ -167,24 +165,19 @@
                             </div>
                         </div>
 
-                        <!-- PHILOSOPHY -->
                         <div class="skills-panel" id="panel-philosophy">
-                            <h3>Philosophy</h3>
+                            <!-- <h3>Architecture & Strategy</h3> -->
                             <ul>
-                                <li>Clean Code</li>
-                                <li>Readable code</li>
-                                <li>Maintainability first</li>
+                                <li>SOLID</li>
+                                <li>CQRS</li>
+                                <li>Component separation (UI/logic/data)</li>
+                                <li>Component-based architecture</li>
                             </ul>
                         </div>
 
-                        <!-- STRATEGY -->
                         <div class="skills-panel" id="panel-strategy">
-                            <h3>Strategy</h3>
-                            <ul>
-                                <li>Scalability-first</li>
-                                <li>API-first</li>
-                                <li>Separation of concerns</li>
-                            </ul>
+                            <h3>Under reconstruction</h3>
+
                         </div>
 
                     </div>
@@ -206,25 +199,21 @@
                         <h3>Some of my projects include:</h3>
                     </div>
 
-                    <!-- PROJECTS LIST -->
                     <div class="projects-list">
 
                         <article class="project-card">
-                            <img src="./assets/projects/project-1.png" alt="Social media manager dashboard">
-                            <p>Made a social media manager template using HTML 5, CSS and JS only.</p>
-                            <a href="#" class="btn">Learn More →</a>
+                            <p>Timetracker</p>
+                            <a href="#projects" class="btn">Learn More →</a>
                         </article>
 
                         <article class="project-card">
-                            <img src="./assets/projects/project-2.png" alt="Landing page project">
-                            <p>Made a simple card page using HTML 5 and CSS 3.</p>
-                            <a href="#" class="btn">Learn More →</a>
+                            <p>Bloggerplatform</p>
+                            <a href="#projects" class="btn">Learn More →</a>
                         </article>
 
                         <article class="project-card">
-                            <img src="./assets/projects/project-3.png" alt="IP tracking website">
-                            <p>Made an IP address tracking website.</p>
-                            <a href="#" class="btn">Learn More →</a>
+                            <p>App for study</p>
+                            <a href="#projects" class="btn">Learn More →</a>
                         </article>
 
                     </div>
@@ -233,44 +222,73 @@
 
             </section>
 
-
             <section id="formCta">
-
                 <h2>Form</h2>
 
-                <form action="">
-
+                <form action="#" onsubmit="return false;">
                     <fieldset>
+                        <legend>Contact form</legend>
 
-                        <legend>Form CTA</legend>
+                        <label for="firstname">
+                            Förnamn
+                            <input type="text" id="firstname" name="firstname">
+                        </label>
 
-                        <label>
-                            <span>Förnamn</span>
-                            <input type="text" id="firstname" placeholder="förnamn">
+                        <label for="email">
+                            E-post
+                            <input type="email" id="email" name="email">
+                        </label>
+
+                        <label for="website">
+                            Website
+                            <input type="url" id="website" name="website">
+                        </label>
+
+                        <label for="phone">
+                            Tel. nummer
+                            <input type="tel" id="phone" name="phone">
+                        </label>
+
+                        <label for="topic">
+                            Topic
+                            <select id="topic" name="topic">
+                                <option value="">Choose one</option>
+                                <option>Frontend</option>
+                                <option>Backend</option>
+                                <option>Fullstack</option>
+                            </select>
                         </label>
 
                         <label>
-                            <span>E-post</span>
-                            <input type="email" id="email" placeholder="e-post">
+                            <input type="checkbox" name="agreement">
+                            I agree to be contacted
                         </label>
 
-                        <label>
-                            <span>Tel. nummer</span>
-                            <input type="text" id="phone" placeholder="tel. nummer">
+                        <label for="message">
+                            Message
+                            <textarea id="message" rows="4"></textarea>
                         </label>
 
+                        <button type="submit" disabled>Send</button>
                     </fieldset>
-
                 </form>
-
             </section>
 
-            <section id="blog">
-                <h2>Blog</h2>
-            </section>
             <section id="contact">
                 <h2>Contact me</h2>
+
+                <address>
+                    <p>Email: <a href="mailto:alex@email.com">alexander.gerhard@outlook.com</a></p>
+                    <p>Phone: <a href="tel:+46700000000">+46 70 757 75 75</a></p>
+                    <p>
+                        LinkedIn:
+                        <a href="https://www.linkedin.com/in/alexandergerhard/ " target="_blank" rel="noopener">
+                            linkedin.com/in/alexandergerhard
+                        </a>
+                    </p>
+                </address>
             </section>
+
         </main>
 
         <footer>
@@ -289,12 +307,12 @@
                 <p class="descriptor">Software Developer Portfolio</p>
             </section>
 
-            <section class="footer-contact">
+            <!-- <section class="footer-contact">
                 <address>
                     <a href="mailto:alex@email.com">alex@email.com</a><br>
                     <a href="https://linkedin.com/in/...">LinkedIn</a>
                 </address>
-            </section>
+            </section> -->
 
             <nav aria-label="Footer navigation">
                 <ul>
@@ -318,7 +336,6 @@
                 }
             }
 
-            /* ===== SKILLS TABS ===== */
             const skillTabs = document.querySelectorAll('.skills-tab');
             const skillPanels = document.querySelectorAll('.skills-panel');
 
