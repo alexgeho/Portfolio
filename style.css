@@ -35,7 +35,7 @@ body {
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -44,7 +44,7 @@ body {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background: rgb(255, 255, 255);
   display: block;
   position: absolute;
   right: 0;
@@ -53,14 +53,14 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #000000;
   color: black;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #ffffff;
+  color: #000;
 }
 
 section {
@@ -88,16 +88,9 @@ form {
 /* The hero image */
 
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Jag\ Blu.jpg");
   background-position: center 55%;
-
-
-  /* Set a specific height */
   height: 60vh;
-
-  /* Position and center the image to scale nicely on all screens */
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -121,7 +114,7 @@ form {
 /* SKILLS SECTION */
 
 
-.skills-layout {
+.layout-skills {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -174,7 +167,7 @@ form {
   height: auto;
 }
 
-.skills-grid {
+.tech-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 32px;
@@ -222,6 +215,51 @@ form {
   height: 64px;
 }
 
+
+/* TEST */
+
+.skills-interactive {
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .skills-interactive {
+    grid-template-columns: 220px 1fr;
+    align-items: start;
+  }
+}
+
+.skills-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-tab {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.skills-tab.active {
+  background: #d4d4d4;
+  color: #000;
+}
+
+.skills-panel {
+  display: none;
+}
+
+.skills-panel.active {
+  display: block;
+}
+
+
+
+
 /* PROJECTS SECTION */
 
 .projects {
@@ -244,6 +282,38 @@ form {
   top: -5px;
   left: -10px;
 }
+
+.projects {
+  background-color: #343D68;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.projects-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background-color: #2f365f;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 
 @media (min-width: 768px) {
 

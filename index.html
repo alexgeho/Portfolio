@@ -8,28 +8,39 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:alt" content="">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="theme-color" content="#fafafa">
     </head>
 
     <body>
 
         <header>
-            <div class="topnav">
+            <nav class="topnav" aria-label="Main navigation">
                 <a href="#home" class="active">Logo</a>
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                    <a href="#news">News</a>
+                    <a href="#news">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-            </div>
+            </nav>
         </header>
 
         <main>
-
             <section id="hero">
                 <div class="hero-image">
                     <div class="hero-text">
@@ -41,9 +52,10 @@
             </section>
 
             <section id="skills">
+
                 <h2>Skills</h2>
 
-                <div class="skills-layout">
+                <div class="layout-skills">
 
                     <div class="skills-cards">
 
@@ -82,79 +94,145 @@
                 </div>
 
                 <h2>I have a vast experience in the following web technologies:</h2>
-                <div class="skills-grid">
 
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets//skills/techSkills/nestjs.svg" alt="nestJs">
+                <div class="skills-interactive">
+
+                    <!-- ASIDE = MENU -->
+                    <aside class="skills-menu">
+                        <button class="skills-tab active" data-target="tech">Tech Skills</button>
+                        <button class="skills-tab" data-target="philosophy">Philosophy</button>
+                        <button class="skills-tab" data-target="strategy">Strategy</button>
+                    </aside>
+
+                    <div class="skills-panels">
+
+                        <div class="skills-panel active" id="panel-tech">
+                            <div class="tech-skills">
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets//skills/techSkills/nestjs.svg" alt="nestJs">
+                                    </div>
+                                    <p>NestJs</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/js.svg" alt="JavaScript">
+                                    </div>
+                                    <p>JavaScript</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/typescript.svg" alt="Typescript">
+                                    </div>
+                                    <p>Typescript</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/react.svg" alt="react">
+                                    </div>
+                                    <p>React</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/mongodb.svg" alt="mongodb">
+                                    </div>
+                                    <p>MongoDb</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/css.svg" alt="css">
+                                    </div>
+                                    <p>CSS</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/html.svg" alt="html">
+                                    </div>
+                                    <p>Html</p>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="hex">
+                                        <img src="./assets/skills/techSkills/figma.svg" alt="figma">
+                                    </div>
+                                    <p>Figma</p>
+                                </div>
+                            </div>
                         </div>
-                        <p>NestJs</p>
-                    </div>
 
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/js.svg" alt="JavaScript">
+                        <!-- PHILOSOPHY -->
+                        <div class="skills-panel" id="panel-philosophy">
+                            <h3>Philosophy</h3>
+                            <ul>
+                                <li>Clean Code</li>
+                                <li>Readable code</li>
+                                <li>Maintainability first</li>
+                            </ul>
                         </div>
-                        <p>JavaScript</p>
-                    </div>
 
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/typescript.svg" alt="Typescript">
+                        <!-- STRATEGY -->
+                        <div class="skills-panel" id="panel-strategy">
+                            <h3>Strategy</h3>
+                            <ul>
+                                <li>Scalability-first</li>
+                                <li>API-first</li>
+                                <li>Separation of concerns</li>
+                            </ul>
                         </div>
-                        <p>Typescript</p>
-                    </div>
 
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/react.svg" alt="react">
-                        </div>
-                        <p>React</p>
                     </div>
-
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/mongodb.svg" alt="mongodb">
-                        </div>
-                        <p>MongoDb</p>
-                    </div>
-
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/css.svg" alt="css">
-                        </div>
-                        <p>CSS</p>
-                    </div>
-
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/html.svg" alt="html">
-                        </div>
-                        <p>Html</p>
-                    </div>
-
-                    <div class="skill">
-                        <div class="hex">
-                            <img src="./assets/skills/techSkills/figma.svg" alt="figma">
-                        </div>
-                        <p>Figma</p>
-                    </div>
-
                 </div>
             </section>
 
             <section id="projects" class="projects">
 
-                <div class="sectionTitle">
-                    <div class="heading-image"><img src="./assets/projects/gears.svg" alt=""></div>
-                    <h2>Projects</h2>
-                </div>
+                <div class="container">
 
-                <div class="sectionTitle">
-                <h3>Some of my projects include:</h3>
+                    <div class="sectionTitle">
+                        <div class="heading-image">
+                            <img src="./assets/projects/gears.svg" alt="" aria-hidden="true">
+                        </div>
+                        <h2>Projects</h2>
+                    </div>
+
+                    <div class="sectionTitle">
+                        <h3>Some of my projects include:</h3>
+                    </div>
+
+                    <!-- PROJECTS LIST -->
+                    <div class="projects-list">
+
+                        <article class="project-card">
+                            <img src="./assets/projects/project-1.png" alt="Social media manager dashboard">
+                            <p>Made a social media manager template using HTML 5, CSS and JS only.</p>
+                            <a href="#" class="btn">Learn More →</a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="./assets/projects/project-2.png" alt="Landing page project">
+                            <p>Made a simple card page using HTML 5 and CSS 3.</p>
+                            <a href="#" class="btn">Learn More →</a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="./assets/projects/project-3.png" alt="IP tracking website">
+                            <p>Made an IP address tracking website.</p>
+                            <a href="#" class="btn">Learn More →</a>
+                        </article>
+
+                    </div>
+
                 </div>
 
             </section>
+
 
             <section id="formCta">
 
@@ -239,6 +317,22 @@
                     x.style.display = "block";
                 }
             }
+
+            /* ===== SKILLS TABS ===== */
+            const skillTabs = document.querySelectorAll('.skills-tab');
+            const skillPanels = document.querySelectorAll('.skills-panel');
+
+            skillTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.dataset.target;
+
+                    skillTabs.forEach(t => t.classList.remove('active'));
+                    skillPanels.forEach(p => p.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(`panel-${target}`).classList.add('active');
+                });
+            });
         </script>
 
     </body>
