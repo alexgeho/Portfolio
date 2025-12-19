@@ -24,7 +24,7 @@ body {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -53,7 +53,7 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #000000;
+  background-color: #8c97b4;
   color: black;
 }
 
