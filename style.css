@@ -16,6 +16,11 @@ section h3 {
   font-weight: lighter;
 }
 
+section p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
 body {
   background-color: beige;
 }
@@ -101,7 +106,7 @@ form {
 .hero-text {
   text-align: left;
   position: absolute;
-  top: 15%;
+  top: 19%;
   left: 36%;
   transform: translate(-50%, -50%);
   color: white;
@@ -171,7 +176,7 @@ form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 32px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .skill {
@@ -218,10 +223,6 @@ form {
 
 /* TEST */
 
-.skills-interactive {
-  display: grid;
-  gap: 32px;
-}
 
 @media (min-width: 768px) {
   .skills-interactive {
@@ -238,7 +239,7 @@ form {
 
 .skills-tab {
   background: none;
-  font-size: 23px;
+  font-size: 18px;
   border: 1px solid #ddd;
   padding: 10px 14px;
   cursor: pointer;
@@ -254,19 +255,13 @@ form {
   display: none;
 }
 
-.skills-panel h3 {
-  font-size: 23px;
-  margin-top: 0;
-}
-
 .skills-panel ul {
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .skills-panel.active {
   display: block;
 }
-
 
 
 
