@@ -94,11 +94,12 @@ form {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Jag\ Blu.jpg");
-  background-position: center 55%;
+  background-position: -30% 55%;
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-color: #000;
 }
 
 
@@ -106,10 +107,15 @@ form {
 .hero-text {
   text-align: left;
   position: absolute;
-  top: 19%;
+  top: 30%;
   left: 36%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.hero-text p {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .hero-text h1 {
