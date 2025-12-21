@@ -70,9 +70,7 @@ body {
 
 section {
   background-color: #ffffff;
-  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); */
   padding: 10px;
-  margin: 10px;
 }
 
 fieldset {
@@ -358,10 +356,6 @@ form {
   text-align: center;
 }
 
-#formCta h2 {
-  margin-bottom: 24px;
-}
-
 .contact-illustration {
   max-width: 360px;
   width: 100%;
@@ -417,9 +411,13 @@ form {
   background: #343D68;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  background-image: url("./assets//contactForm/paperPlane.svg");
+  background-repeat: no-repeat;
+  background-position: right 120px center;
+  background-size: 25px 25px;
 }
 
 #formCta button:hover {
