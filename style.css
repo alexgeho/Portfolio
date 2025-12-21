@@ -88,37 +88,46 @@ form {
   width: 100%;
 }
 
-/* The hero image */
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Jag\ Blu.jpg");
-  background-position: -30% 55%;
-  height: 60vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-color: #000;
+
+/* HERO SECTION*/
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 40px 16px;
+}
+
+.hero-content {
+  flex: 1;
+  color: #000000;
+}
+
+.hero-content h1 {
+  font-weight: 300;
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-visual img {
+  width: 200px;
+  height: auto;
+}
+
+.hero-content { flex: 1.2; }
+.hero-visual  { flex: 0.8; }
+
+.hero-content button {
+  font-size: 17px; 
+  padding: 8px 14px;
 }
 
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: left;
-  position: absolute;
-  top: 30%;
-  left: 36%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text p {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.hero-text h1 {
-  font-weight: normal;
-}
 
 /* SKILLS SECTION */
 
@@ -509,5 +518,30 @@ form {
 
   .topnav #myLinks a {
     display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+  }
+
+  .hero-content {
+    max-width: 520px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: 30px;
+  }
+
+  .hero-visual img {
+    max-width: auto;
   }
 }
