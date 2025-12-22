@@ -91,43 +91,28 @@ form {
 
 
 /* HERO SECTION*/
+
+.hero {
+  position: relative;
+}
+
 .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 40px 16px;
-}
-
-.hero-content {
-  flex: 1;
-  color: #000000;
-}
-
-.hero-content h1 {
-  font-weight: 300;
+  min-height: 420px;
+  background-color: #3f3d56;
 }
 
 .hero-visual {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
 }
 
 .hero-visual img {
   width: 200px;
   height: auto;
 }
-
-.hero-content { flex: 1.2; }
-.hero-visual  { flex: 0.8; }
-
-.hero-content button {
-  font-size: 17px; 
-  padding: 8px 14px;
-}
-
-
 
 /* SKILLS SECTION */
 
@@ -526,7 +511,6 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 70vh;
   }
 
   .hero-content {
