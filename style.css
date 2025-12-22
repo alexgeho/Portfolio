@@ -94,7 +94,7 @@ form {
 
 .hero {
   position: relative;
-  color: #8c97b4;
+  color: #3f3D56;
 }
 
 #hero {
@@ -511,25 +511,48 @@ form {
 }
 
 @media (min-width: 1200px) {
+
+  #hero {
+    height: 40vh;
+    max-width: 1200px;
+    display: flex;
+
+  }
+
   .hero-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
   }
 
   .hero-content {
-    max-width: 520px;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #3f3D56;
+
+    button {
+      width: 50%;
+      margin-top: 30px;
+    }
   }
 
-  .hero-content h1 {
-    font-size: 60px;
+  .hero-visual {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 40px;
   }
 
-  .hero-content p {
-    font-size: 30px;
-  }
+
 
   .hero-visual img {
-    max-width: auto;
+    height: 100%;
+    width: auto;
   }
+
+
+
 }
