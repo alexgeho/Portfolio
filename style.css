@@ -94,13 +94,17 @@ form {
 
 .hero {
   position: relative;
+  color: #8c97b4;
+}
+
+#hero {
+  outline-style: dashed;
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
-  min-height: 420px;
-  background-color: #3f3d56;
+  outline-style: dotted;
 }
 
 .hero-visual {
