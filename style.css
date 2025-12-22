@@ -108,7 +108,7 @@ form {
 }
 
 .hero-visual {
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 10%;
 }
