@@ -3,8 +3,8 @@ header {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
-  z-index: 1000;
-  padding: 0 15px;
+  padding: 0;
+
 
 }
 
@@ -70,7 +70,6 @@ body {
 
 section {
   background-color: #ffffff;
-  padding: 10px;
 }
 
 fieldset {
@@ -508,6 +507,8 @@ form {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
+    outline: 2px solid rgb(53, 218, 92);
+
   }
 
 
@@ -518,13 +519,12 @@ form {
 
   .hero-inner {
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
     height: 100%;
   }
 
   .hero-content {
     flex: 1;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     color: #3f3D56;
@@ -535,20 +535,21 @@ form {
     }
   }
 
-  .hero-visual {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 40px;
-  }
+.hero-visual {
+  height: 100%;
+  display: flex;
+  /* justify-content: flex-end;  */
+  align-items: flex-end;  
+}
+
+
+.hero-visual img {
+  height: 100%;
+  width: auto;
+}
 
 
 
-  .hero-visual img {
-    height: 100%;
-    width: auto;
-  }
 
 
 
