@@ -1,0 +1,446 @@
+header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  padding: 0;
+}
+
+section h2 {
+  font-weight: lighter;
+}
+
+section h3 {
+  font-weight: lighter;
+}
+
+section p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+body {
+  background-color: beige;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #8c97b4;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ffffff;
+  color: #000;
+}
+
+section {
+  background-color: #ffffff;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+form {
+  width: 100%;
+}
+
+/* HERO SECTION*/
+.hero {
+  position: relative;
+  color: #3f3D56;
+}
+
+#hero {
+  outline-style: dashed;
+  border-color: blue;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  outline-style: dotted;
+}
+
+.hero-visual {
+  position: relative;
+  bottom: 0;
+}
+
+.hero-visual img {
+  width: 200px;
+  height: auto;
+}
+
+/* SKILLS SECTION */
+.layout-skills {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+.skills-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-illustration img {
+  position: relative;
+  width: 440px;
+  height: auto;
+  left: -270px;
+}
+
+.skill-item {
+  position: relative;
+  width: 170px;
+  margin: 15px;
+}
+
+.skill-itemCard {
+  display: block;
+  width: 100%;
+}
+
+.skill-itemTop {
+  position: absolute;
+  top: -17px;
+  left: 0px;
+  width: 40%;
+}
+
+.skill-checkBox {
+  position: absolute;
+  top: -0.1px;
+  left: 195px;
+  width: 25px;
+  height: auto;
+}
+
+.skill-checkmark {
+  position: absolute;
+  top: -1px;
+  left: 204px;
+  width: 25px;
+  height: auto;
+}
+
+.tech-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 32px;
+  margin-top: 20px;
+}
+
+.skill {
+  text-align: center;
+  cursor: default;
+}
+
+.skill img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.skill p {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+.skill:hover img {
+  transform: translateY(-4px) scale(1.04);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.12));
+}
+
+.hex {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 12px;
+  background: url("./assets/skills//techSkills/polygon.svg") no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex img {
+  width: 64px;
+  height: 64px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  background-color: #343D68;
+  color: #ffffff;
+  /* padding: 1rem 9rem; */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle h3 {
+  font-size: 23px;
+}
+
+.heading-image {
+  position: relative;
+  top: -5px;
+  left: -10px;
+}
+
+.projects-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #2f365f;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project-card p {
+  color: #ddd;
+  font-size: 20px;
+}
+
+.project-card a {
+  color: #ddd;
+  font-size: 20px;
+}
+
+/* FORM */
+#formCta {
+  background-color: #f7f7fb;
+  padding: 60px 16px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#formCta fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#formCta legend {
+  position: absolute;
+  left: -9999px;
+  /* visually hidden, but accessible */
+}
+
+#formCta h2 {
+  margin-bottom: 24px;
+}
+
+.contact-illustration {
+  max-width: 360px;
+  width: 100%;
+  display: block;
+}
+
+#formCta form {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+#formCta label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+#formCta input,
+#formCta select,
+#formCta textarea {
+  margin-top: 6px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+#formCta input:focus,
+#formCta textarea:focus,
+#formCta select:focus {
+  border-color: #343D68;
+}
+
+#formCta .checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+#formCta button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  background: #343D68;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: url("./assets//contactForm/paperPlane.svg");
+  background-repeat: no-repeat;
+  background-position: right 120px center;
+  background-size: 25px 25px;
+}
+
+#formCta button:hover {
+  background: #2b335a;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: -80px;
+  position: relative;
+  background-color: #343D68;
+  color: #fff;
+}
+
+.footer-wave {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.footer-content {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-projects {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: #7fd3ff;
+  text-decoration: none;
+}
+
+.github-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links img {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    outline: 2px solid rgb(53, 218, 92);
+  }
+  #hero {
+    height: 40vh;
+    display: flex;
+  }
+  .hero-inner {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    color: #3f3D56;
+  }
+  .hero-content button {
+    width: 50%;
+    margin-top: 30px;
+  }
+  .hero-visual {
+    height: 100%;
+    display: flex;
+    /* justify-content: flex-end;  */
+    align-items: flex-end;
+  }
+  .hero-visual img {
+    max-height: 300px;
+    width: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  .skills-interactive {
+    grid-template-columns: 220px 1fr;
+    align-items: start;
+  }
+}
+
+.skills-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-tab {
+  background: none;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.skills-tab.active {
+  background: #d4d4d4;
+  color: #000;
+}
+
+.skills-panel {
+  display: none;
+}
+
+.skills-panel ul {
+  font-size: 18px;
+}
+
+.skills-panel.active {
+  display: block;
+}

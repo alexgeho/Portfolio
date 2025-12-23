@@ -70,10 +70,7 @@ section {
   background-color: #ffffff;
 }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-}
+
 
 label {
   display: flex;
@@ -96,6 +93,7 @@ form {
 
 #hero {
   outline-style: dashed;
+  border-color: blue;
 }
 
 .hero-inner {
@@ -219,47 +217,7 @@ form {
 }
 
 
-/* TEST */
 
-
-@media (min-width: 768px) {
-  .skills-interactive {
-    grid-template-columns: 220px 1fr;
-    align-items: start;
-  }
-}
-
-.skills-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.skills-tab {
-  background: none;
-  font-size: 18px;
-  border: 1px solid #ddd;
-  padding: 10px 14px;
-  cursor: pointer;
-  text-align: left;
-}
-
-.skills-tab.active {
-  background: #d4d4d4;
-  color: #000;
-}
-
-.skills-panel {
-  display: none;
-}
-
-.skills-panel ul {
-  font-size: 18px;
-}
-
-.skills-panel.active {
-  display: block;
-}
 
 
 
@@ -477,77 +435,3 @@ form {
 }
 
 
-
-
-@media (min-width: 768px) {
-
-  .topnav a.icon {
-    display: none;
-  }
-
-  .topnav #myLinks {
-    display: flex;
-  }
-
-  .topnav {
-    display: flex;
-    align-items: center;
-  }
-
-  .topnav #myLinks a {
-    display: inline-block;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-    outline: 2px solid rgb(53, 218, 92);
-
-  }
-
-
-  #hero {
-    height: 40vh;
-    display: flex;
-  }
-
-  .hero-inner {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
-  }
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    color: #3f3D56;
-
-    button {
-      width: 50%;
-      margin-top: 30px;
-    }
-  }
-
-.hero-visual {
-  height: 100%;
-  display: flex;
-  /* justify-content: flex-end;  */
-  align-items: flex-end;  
-}
-
-
-.hero-visual img {
-  max-height: 300px;
-  width: auto;
-}
-
-
-
-
-
-
-}
