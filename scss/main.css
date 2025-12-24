@@ -456,4 +456,11 @@
   max-width: 1200px;
   margin: 0 auto;
   outline: 2px solid rgb(9, 1, 255);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
 }/*# sourceMappingURL=main.css.map */
