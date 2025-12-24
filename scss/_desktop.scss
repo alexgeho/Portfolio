@@ -18,6 +18,14 @@
     justify-content: space-between;
   }
 
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: block;
+  }
+
   //HERO
   .hero {
     position: relative;
