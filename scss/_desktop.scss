@@ -19,31 +19,31 @@
   }
 
   //HERO
-.hero {
-  position: relative;
-  color: #3f3D56;
-}
+  .hero {
+    position: relative;
+    color: #3f3D56;
+  }
 
-#hero {
-  outline-style: dashed;
-  border-color: blue;
-}
+  #hero {
+    outline-style: dashed;
+    border-color: blue;
+  }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  outline-style: dotted;
-}
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    outline-style: dotted;
+  }
 
-.hero-visual {
-  position: relative;
-  bottom: 0;
-}
+  .hero-visual {
+    position: relative;
+    bottom: 0;
+  }
 
-.hero-visual img {
-  width: 200px;
-  height: auto;
-}
+  .hero-visual img {
+    width: 200px;
+    height: auto;
+  }
 
   // SKILLS
 
@@ -61,15 +61,25 @@
     max-width: 100%;
     height: auto;
   }
- .skill img {
-  height: 80px;
-  width: auto;
- }
 
- .tech-skills {
-  padding: 15px;
-  gap: 30px;
- }
+  .skill img {
+    height: 80px;
+    width: auto;
+  }
+
+  .tech-skills {
+    padding: 15px;
+    gap: 30px;
+  }
+
+  .skills-panel {
+    display: none;
+  }
+
+  .skills-panel.active {
+    display: block;
+  }
+
 
 
 }

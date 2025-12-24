@@ -152,6 +152,12 @@
     width: 64px;
     height: 64px;
   }
+  .skills-panel {
+    display: none;
+  }
+  .skills-panel.active {
+    display: block;
+  }
   /* PROJECTS SECTION */
   .projects {
     background-color: #343D68;
@@ -381,6 +387,12 @@
   .tech-skills {
     padding: 15px;
     gap: 30px;
+  }
+  .skills-panel {
+    display: none;
+  }
+  .skills-panel.active {
+    display: block;
   }
 }
 .container {
