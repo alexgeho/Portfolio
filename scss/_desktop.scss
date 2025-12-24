@@ -18,4 +18,58 @@
     justify-content: space-between;
   }
 
+  //HERO
+.hero {
+  position: relative;
+  color: #3f3D56;
+}
+
+#hero {
+  outline-style: dashed;
+  border-color: blue;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  outline-style: dotted;
+}
+
+.hero-visual {
+  position: relative;
+  bottom: 0;
+}
+
+.hero-visual img {
+  width: 200px;
+  height: auto;
+}
+
+  // SKILLS
+
+  .layout-skills {
+    display: flex;
+    gap: 40px;
+  }
+
+  .tech-skills {
+    display: flex;
+  }
+
+  .skills-man img,
+  .skill img {
+    max-width: 100%;
+    height: auto;
+  }
+ .skill img {
+  height: 80px;
+  width: auto;
+ }
+
+ .tech-skills {
+  padding: 15px;
+  gap: 30px;
+ }
+
+
 }
