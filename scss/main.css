@@ -380,6 +380,10 @@
     height: 80px;
     width: auto;
   }
+  .tech-skills {
+    padding: 15px;
+    gap: 30px;
+  }
 }
 .container {
   max-width: 1200px;
