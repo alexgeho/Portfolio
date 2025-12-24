@@ -71,9 +71,8 @@
   /* SKILLS SECTION */
   .layout-skills {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
     gap: 40px;
-    padding-left: 40px;
   }
   .skills-cards {
     display: flex;
