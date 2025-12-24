@@ -48,9 +48,8 @@
   // SKILLS
 
   .layout-skills {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    gap: 80px;
+    display: flex;
+    gap: 40px;
   }
 
   .tech-skills {
@@ -71,5 +70,6 @@
   padding: 15px;
   gap: 30px;
  }
+
 
 }
