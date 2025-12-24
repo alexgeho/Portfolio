@@ -359,13 +359,11 @@
     color: #3f3D56;
   }
   #hero {
-    outline-style: dashed;
     border-color: blue;
   }
   .hero-inner {
     display: flex;
     align-items: center;
-    outline-style: dotted;
   }
   .hero-visual {
     position: relative;
@@ -381,6 +379,9 @@
   }
   .tech-skills {
     display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
   }
   .skills-man img,
   .skill img {
@@ -392,8 +393,7 @@
     width: auto;
   }
   .tech-skills {
-    padding: 15px;
-    gap: 30px;
+    display: grid;
   }
   .skills-panel {
     display: none;
@@ -462,7 +462,6 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  outline: 2px solid rgb(9, 1, 255);
 }
 
 header {

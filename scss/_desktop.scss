@@ -33,14 +33,12 @@
   }
 
   #hero {
-    outline-style: dashed;
     border-color: blue;
   }
 
   .hero-inner {
     display: flex;
     align-items: center;
-    outline-style: dotted;
   }
 
   .hero-visual {
@@ -62,6 +60,9 @@
 
   .tech-skills {
     display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
   }
 
   .skills-man img,
@@ -76,8 +77,8 @@
   }
 
   .tech-skills {
-    padding: 15px;
-    gap: 30px;
+    display: grid;
+
   }
 
   .skills-panel {
