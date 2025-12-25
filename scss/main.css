@@ -451,13 +451,71 @@
   .Contact-me {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 360px;
+    justify-content: center;
     gap: 30px;
-    padding: 15px;
   }
   .Contact-me img {
-    width: 100%;
+    width: 500px;
     height: auto;
+  }
+  #formCta fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  #formCta legend {
+    position: absolute;
+    left: -9999px;
+    /* visually hidden, but accessible */
+  }
+  #formCta h2 {
+    margin-bottom: 24px;
+  }
+  #formCta form {
+    max-width: 420px;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(255, 11, 11, 0.08);
+    text-align: left;
+  }
+  #formCta label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+  #formCta input,
+  #formCta select,
+  #formCta textarea {
+    margin-top: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+  }
+  #formCta input:focus,
+  #formCta textarea:focus,
+  #formCta select:focus {
+    border-color: #343D68;
+  }
+  #formCta button {
+    width: 100%;
+    padding: 14px;
+    background: #343D68;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: url("../assets/contactForm/paperPlane.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px 25px;
+  }
+  #formCta button:hover {
+    background: #2b335a;
   }
   /* FOOTER */
   .footer {
@@ -514,7 +572,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid rgb(0, 255, 17);
+  border: 1px solid rgb(197, 197, 197);
   text-align: center;
 }
 
