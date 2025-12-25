@@ -376,7 +376,8 @@
   }
   .layout-skills {
     display: grid;
-    grid-template-columns: 1fr 420px; /* слева контент, справа иллюстрация */
+    grid-template-columns: 1fr 420px;
+    /* слева контент, справа иллюстрация */
     gap: 40px;
     align-items: start;
   }
@@ -420,8 +421,13 @@
     gap: 15px;
     border: 1px solid green;
   }
+  .projects {
+    background-color: #343D68;
+  }
   .sectionTitle {
     text-align: center;
+    color: #E1E1E1;
+    font-style: normal;
   }
   .projects-list {
     display: grid;
@@ -434,11 +440,9 @@
     background-color: #2b345d;
     border: 2px solid #7b7b7b;
     padding: 40px;
+    margin-bottom: 40px;
     text-align: center;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .project-card a {
     color: #ffffff;
