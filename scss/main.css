@@ -52,14 +52,9 @@
     position: relative;
     color: #3f3D56;
   }
-  #hero {
-    outline-style: dashed;
-    border-color: blue;
-  }
   .hero-inner {
     display: flex;
     align-items: center;
-    outline-style: dotted;
   }
   .hero-visual {
     position: relative;
@@ -364,6 +359,7 @@
   }
   .hero-inner {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   .hero-visual {
@@ -571,7 +567,6 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid rgb(197, 197, 197);
   text-align: center;
 }
 
