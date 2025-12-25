@@ -147,6 +147,20 @@
     }
   }
 
+  /* CTA */
+
+  .Contact-me {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 360px;
+    gap: 30px;
+    padding: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   /* FOOTER */
 
