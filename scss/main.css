@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 501px) {
   /* Style the navigation menu */
   .topnav {
@@ -374,8 +375,13 @@
     height: auto;
   }
   .layout-skills {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 420px; /* слева контент, справа иллюстрация */
     gap: 40px;
+    align-items: start;
+  }
+  .skills-panels {
+    min-height: 360px;
   }
   .tech-skills {
     display: flex;
@@ -469,6 +475,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  border: 1px solid rgb(0, 255, 17);
 }
 
 header {

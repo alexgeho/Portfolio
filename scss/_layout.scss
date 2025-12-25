@@ -1,11 +1,13 @@
   .container {
-      max-width: 1200px;
-      margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 255, 17);
+
   }
 
   header {
-  position: sticky;
-  top: 0;
-  background: white;
-  z-index: 1000;
-}
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+  }

@@ -53,10 +53,17 @@
 
   // SKILLS
 
-  .layout-skills {
-    display: flex;
-    gap: 40px;
+.layout-skills {
+  display: grid;
+  grid-template-columns: 1fr 420px; /* слева контент, справа иллюстрация */
+  gap: 40px;
+  align-items: start;
+}
+
+  .skills-panels {
+    min-height: 360px;
   }
+
 
   .tech-skills {
     display: flex;
