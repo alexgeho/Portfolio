@@ -111,6 +111,38 @@
     border: 1px solid green;
   }
 
+
+// PROJECTS
+
+.sectionTitle {
+  text-align: center;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  padding: 5px;
+}
+
+.project-card {
+  background-color: #2b345d;   // тёмный фон как в макете
+  border: 2px solid #7b7b7b;   // бирюзовая рамка
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+
   /* FOOTER */
 
 
