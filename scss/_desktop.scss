@@ -154,6 +154,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     gap: 30px;
+
     img {
       width: 500px;
       height: auto;
@@ -235,12 +236,12 @@
   /* FOOTER */
 
 
-
-  .footer {
-    position: relative;
+  .footer .container {
     background-color: #343D68;
     color: #fff;
+    
   }
+
 
   .footer-wave {
     display: block;

@@ -518,8 +518,7 @@
     background: #2b335a;
   }
   /* FOOTER */
-  .footer {
-    position: relative;
+  .footer .container {
     background-color: #343D68;
     color: #fff;
   }
