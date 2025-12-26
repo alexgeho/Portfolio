@@ -460,6 +460,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 150px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 420px;
+  }
+  .hero-content h1 {
+    font-style: normal;
+    font-weight: 100;
+    color: #343D68;
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  .hero-content button {
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: #E84849;
   }
   .layout-skills {
     display: grid;
