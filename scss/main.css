@@ -35,7 +35,8 @@
   .topnav #myLinks.active {
     display: flex;
     align-items: flex-start;
-    margin-top: 12px;
+    gap: 6px;
+    margin-top: 36px;
   }
   .topnav a {
     padding: 6px 0;

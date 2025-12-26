@@ -46,7 +46,8 @@
   .topnav #myLinks.active {
     display: flex;
     align-items: flex-start;
-    margin-top: 12px;
+    gap: 6px; // ← одинаковое расстояние между пунктами
+    margin-top: 36px;
 
   }
 
