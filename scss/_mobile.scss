@@ -1,61 +1,60 @@
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 515px) {
 
-  /* Style the navigation menu */
   .topnav {
-    overflow: hidden;
-    background-color: #ffffff;
     position: relative;
+    background: #ffffff;
+    padding: 12px 16px;
   }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
+  .brand {
+    text-align: left;
+  }
+
+  .brand a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #595959;
+  }
+
+  .brand h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 2px 0 0;
+    color: #E84849;
+  }
+
+  /* меню */
   .topnav #myLinks {
     display: none;
-  }
-
-  /* Style navigation menu links */
-  .topnav a {
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.25rem;
-    display: block;
-  }
-
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: rgb(255, 255, 255);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #8c97b4;
-    color: black;
-  }
-
-  /* Style the active link (or home/logo) */
-  .brand {
-    background-color: #ffffff;
-    color: #000;
-  }
-
-  section {
-    background-color: #ffffff;
-  }
-
-
-
-  label {
-    display: flex;
     flex-direction: column;
-    padding: 5px;
+    margin-top: 8px;
+
   }
 
-  form {
-    width: 100%;
+  .topnav #myLinks a {
+    text-decoration: none;
+    color: #595959;
+
+  }
+
+  /* когда меню открыто */
+  .topnav #myLinks.active {
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .topnav a {
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    color: #595959;
+    right: 16px;
+    top: 16px;
   }
 
 
