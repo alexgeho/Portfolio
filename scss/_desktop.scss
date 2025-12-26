@@ -120,6 +120,7 @@
       font-weight: 100;
       color: #343D68;
       font-size: 2rem;
+      margin-bottom: 0px;
     }
 
     p {
@@ -127,10 +128,21 @@
     }
 
     button {
-      width: 30%;
+      max-width: 50%;
       padding: 10px;
       color: white;
       background-color: #E84849;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        background-color: #fd7979;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      }
+
     }
 
   }
