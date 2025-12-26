@@ -17,13 +17,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
- }
+  }
 
   .topnav a {
+    display: inline-flex;
+    align-items: center;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.25rem;
-    display: block;
 
   }
 
@@ -33,6 +34,11 @@
     margin: 0;
     font-style: normal;
     color: #E84849;
+  }
+
+  .topnav a.projectsMenu {
+    color: #E84849;
+    gap: 5px;
   }
 
   //HERO

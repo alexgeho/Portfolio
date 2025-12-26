@@ -20,23 +20,25 @@
     margin: 2px 0 0;
     color: #E84849;
   }
-  /* меню */
   .topnav #myLinks {
     display: none;
     flex-direction: column;
-    margin-top: 8px;
   }
   .topnav #myLinks a {
     text-decoration: none;
     color: #595959;
   }
+  .topnav #myLinks a.projectsMenu {
+    color: #E84849;
+  }
   /* когда меню открыто */
   .topnav #myLinks.active {
     display: flex;
     align-items: flex-start;
+    margin-top: 12px;
   }
   .topnav a {
-    padding: 12px 0;
+    padding: 6px 0;
     font-size: 1.1rem;
   }
   .topnav a.icon {
@@ -386,10 +388,11 @@
     padding: 10px;
   }
   .topnav a {
+    display: inline-flex;
+    align-items: center;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.25rem;
-    display: block;
   }
   .brand h1 {
     font-size: 1.4rem;
@@ -397,6 +400,10 @@
     margin: 0;
     font-style: normal;
     color: #E84849;
+  }
+  .topnav a.projectsMenu {
+    color: #E84849;
+    gap: 5px;
   }
   .hero {
     position: relative;

@@ -24,29 +24,34 @@
     color: #E84849;
   }
 
-  /* меню */
+
+
   .topnav #myLinks {
     display: none;
     flex-direction: column;
-    margin-top: 8px;
-
   }
+
 
   .topnav #myLinks a {
     text-decoration: none;
     color: #595959;
 
+    &.projectsMenu {
+      color: #E84849;
+    }
   }
+
 
   /* когда меню открыто */
   .topnav #myLinks.active {
     display: flex;
     align-items: flex-start;
+    margin-top: 12px;
 
   }
 
   .topnav a {
-    padding: 12px 0;
+    padding: 6px 0;
     font-size: 1.1rem;
   }
 
