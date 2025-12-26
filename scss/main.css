@@ -122,7 +122,8 @@
   }
   .hero-content p {
     font-size: 1.2rem;
-    margin-top: 8px;
+    margin-top: 18px;
+    margin-bottom: 48px;
   }
   .hero-content button {
     max-width: 50%;
@@ -160,60 +161,17 @@
     width: 170px;
     margin: 15px;
   }
-  .skill-itemCard {
-    display: block;
-    width: 100%;
-  }
-  .skill-itemTop {
-    position: absolute;
-    top: -17px;
-    left: 0px;
-    width: 40%;
-  }
-  .skill-checkBox {
-    position: absolute;
-    top: -0.1px;
-    left: 195px;
-    width: 25px;
-    height: auto;
-  }
-  .skill-checkmark {
-    position: absolute;
-    top: -1px;
-    left: 204px;
-    width: 25px;
-    height: auto;
-  }
   .tech-skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 32px;
-    margin-top: 20px;
-  }
-  .skill {
-    text-align: center;
-    cursor: default;
-  }
-  .skill img {
-    width: 90px;
-    height: auto;
-    transition: transform 0.25s ease, filter 0.25s ease;
-  }
-  .skill p {
-    margin-top: 12px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #333;
-  }
-  .skill:hover img {
-    transform: translateY(-4px) scale(1.04);
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.12));
+    gap: 12px;
+    margin-top: 10px;
   }
   .hex {
     width: 120px;
     height: 120px;
     margin: 0 auto 12px;
-    background: url("./assets/skills//techSkills/polygon.svg") no-repeat center;
+    background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
     background-size: contain;
     display: flex;
     align-items: center;
@@ -505,6 +463,11 @@
     color: #343D68;
     font-size: 2rem;
     margin-bottom: 0;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 18px;
+    margin-bottom: 48px;
   }
   .hero-content button {
     max-width: 50%;
