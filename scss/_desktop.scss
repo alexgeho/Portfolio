@@ -116,12 +116,8 @@
     max-width: 420px;
 
     h1 {
-      font-style: normal;
-      font-weight: 100;
-      color: #343D68;
-      font-size: 2rem;
-      margin-bottom: 0px;
-    }
+    @include hero-heading;
+  }
 
     p {
       font-size: 1.5rem;
