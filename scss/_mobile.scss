@@ -137,6 +137,33 @@
     align-items: center;
   }
 
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px;
+
+    @include mob-hero-heading;
+
+    button {
+      max-width: 50%;
+      padding: 10px;
+      color: white;
+      background-color: #E84849;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        background-color: #fd7979;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      }
+
+    }
+  }
+
 
   /* SKILLS SECTION */
 

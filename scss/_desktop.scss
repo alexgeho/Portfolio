@@ -116,12 +116,9 @@
     max-width: 420px;
 
     h1 {
-    @include hero-heading;
+    @include desktop-hero-heading;
   }
 
-    p {
-      font-size: 1.5rem;
-    }
 
     button {
       max-width: 50%;

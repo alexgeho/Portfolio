@@ -1,8 +1,25 @@
-// _mixins.scss
-@mixin hero-heading {
+@mixin mob-hero-heading {
+ h1 {
+    font-weight: 100;
+    font-size: 1.6rem;
+    color: #343D68;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+}
+
+@mixin 
+desktop-hero-heading {
   font-style: normal;
   font-weight: 100;
   color: #343D68;
   font-size: 2rem;
   margin-bottom: 0;
+
+  
+   
 }
