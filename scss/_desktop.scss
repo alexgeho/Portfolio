@@ -106,48 +106,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 420px;
+    max-width: 620px;
 
- 
     @include desktop-hero-heading;
-
-
-
-    button {
-      max-width: 50%;
-      padding: 10px;
-      color: white;
-      background-color: #E84849;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 1.5rem;
-      border: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-      &:hover {
-        background-color: #fd7979;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-      }
-
-    }
-
   }
 
+  .hero-content button {
+    @include button-big;
+  }
+
+
   // SKILLS
+
+  .title-section {
+    @include title-section;
+  }
+
+  .skills-tab {
+    @include button-small;
+  }
 
   .layout-skills {
     display: grid;
     grid-template-columns: 1fr 420px;
-    /* слева контент, справа иллюстрация */
     gap: 40px;
     align-items: start;
+  }
+
+  .hex {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 12px;
+
+    background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
+    background-size: contain;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .skills-panels {
@@ -156,8 +159,8 @@
 
 
   .tech-skills {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 30px;
   }
@@ -171,11 +174,6 @@
   .skill img {
     height: 80px;
     width: auto;
-  }
-
-  .tech-skills {
-    display: grid;
-
   }
 
   .skill {

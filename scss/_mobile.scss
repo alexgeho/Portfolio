@@ -168,6 +168,9 @@
 
   /* SKILLS SECTION */
 
+  .skills-tab {
+        @include button-small;
+  }
 
   .layout-skills {
     display: flex;
