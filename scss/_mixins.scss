@@ -1,33 +1,24 @@
-@mixin mob-hero-heading {
-    h1 {
-        font-weight: 100;
-        font-size: 1.6rem;
-        color: #343D68;
-        margin-bottom: 0;
-    }
+@use "sass:color";
+@use "variables";
 
-    p {
-        font-size: 1.2rem;
-        margin-top: 18px;
-        margin-bottom: 48px;
-    }
+@mixin hero-heading($h1-size, $p-size) {
+  h1 {
+    font-size: $h1-size;
+    line-height: 1.2;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  p {
+    font-size: $p-size;
+    line-height: 1.6;
+    max-width: 520px;
+    margin-bottom: 40px;
+
+  }
 }
 
-@mixin desktop-hero-heading {
-    h1 {
-        font-style: normal;
-        font-weight: 100;
-        color: #343D68;
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
-
-    p {
-        font-size: 1.7rem;
-        margin-top: 18px;
-        margin-bottom: 48px;
-    }
-}
 
 @mixin title-section {
   max-width: 640px;
@@ -57,7 +48,7 @@
     height: 3px;
     margin: 28px auto 0;
     border-radius: 2px;
-    background-color: $color-primary;
+    background-color: variables.$color-primary;
   }
 }
 
@@ -73,69 +64,27 @@
 
   font-weight: 500;
   color: white;
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    background-color: lighten($color-primary, 8%);
+    background-color: color.adjust(variables.$color-primary, $lightness: 8%);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   }
 }
+
 @mixin button-big {
   @include button-base;
   font-size: 1.5rem;
   width: 30%;
 }
+
 @mixin button-small {
   @include button-base;
   font-size: 1rem;
   padding: 10px 6px;
   margin-left: 20px;
 }
-
-
-
-
-
-// @mixin button-big {
-//     button {
-//         max-width: 50%;
-//         padding: 10px;
-//         color: white;
-//         background-color: #E84849;
-//         border-radius: 10px;
-//         cursor: pointer;
-//         font-size: 1.5rem;
-//         border: none;
-//         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-//         &:hover {
-//             background-color: #fd7979;
-//             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-//         }
-//     }
-// }
-
-// @mixin button-small {
-
-//     max-width: 50%;
-//     padding: 15px;
-//     margin-left: 20px;
-//     margin-bottom: 20px;
-//     color: white;
-//     background-color: #E84849;
-//     border-radius: 10px;
-//     cursor: pointer;
-//     font-size: 1.2rem;
-//     border: none;
-//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-//     &:hover {
-//         background-color: #fd7979;
-//         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-
-//     }
-// }

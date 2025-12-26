@@ -1,449 +1,453 @@
-@media screen and (max-width: 515px) {
+  @use "mixins";
+  @use "variables";
 
-  .topnav {
-    position: relative;
-    background: #ffffff;
-    padding: 12px 16px;
-  }
+  @media screen and (max-width: 515px) {
 
-  .brand {
-    text-align: left;
-  }
+    .topnav {
+      position: relative;
+      background: #ffffff;
+      padding: 12px 16px;
+    }
 
-  .brand a {
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #595959;
-  }
+    .brand {
+      text-align: left;
+    }
 
-  .brand h1 {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 2px 0 0;
-    color: #E84849;
-  }
+    .brand a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #595959;
+    }
 
-  .topnav #myLinks {
-    display: none;
-    flex-direction: column;
-  }
-
-  .topnav #myLinks a {
-    text-decoration: none;
-    color: #595959;
-
-    &.projectsMenu {
+    .brand h1 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 2px 0 0;
       color: #E84849;
     }
-  }
 
-  .topnav #myLinks.active {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px; 
-    margin-top: 36px;
+    .topnav #myLinks {
+      display: none;
+      flex-direction: column;
+    }
 
-  }
+    .topnav #myLinks a {
+      text-decoration: none;
+      color: #595959;
 
-  .topnav a {
-    padding: 6px 0;
-    font-size: 1.1rem;
-  }
-
-  .topnav a.icon {
-    position: absolute;
-    color: #595959;
-    right: 16px;
-    top: 16px;
-  }
-
-
-
-  /* HERO SECTION*/
-
-  .hero {
-    position: relative;
-    color: #3f3D56;
-  }
-
-  .hero-inner {
-    display: flex;
-    align-items: center;
-  }
-
-  .hero-visual {
-    position: relative;
-    bottom: 0;
-  }
-
-  .hero-photo {
-    display: block;
-    width: 200px;
-    border-radius: 12px;
-    padding-top: 20px;
-  }
-
-  .cube {
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    width: 20px;
-    height: auto;
-  }
-
-  .zigzag {
-    position: absolute;
-    left: 20px;
-    top: 50px;
-    width: 15px;
-    height: auto;
-  }
-
-  .plus {
-    position: absolute;
-    top: 17px;
-    left: 50%;
-    // transform: translateX(-50%);
-    color: #ff4d4d;
-    width: 15px;
-    height: auto;
-  }
-
-  .circles {
-    position: absolute;
-    top: 300px;
-    left: 45%;
-    width: 80px;
-    height: auto;
-  }
-
-  .ellipse {
-    position: absolute;
-    top: 300px;
-    left: 0;
-    width: 25px;
-    height: auto;
-  }
-
-  .hero-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 10px;
-
-
-    @include mob-hero-heading;
-
-    button {
-      max-width: 50%;
-      padding: 10px;
-      color: white;
-      background-color: #E84849;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 1.2rem;
-      border: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-      &:hover {
-        background-color: #fd7979;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      &.projectsMenu {
+        color: #E84849;
       }
-
-    }
-  }
-
-
-  /* SKILLS SECTION */
-
-  .skills-tab {
-    @include button-small;
-  }
-
-  .layout-skills {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 40px;
-  }
-
-
-  .skills-cards {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-illustration img {
-    position: relative;
-    width: 440px;
-    height: auto;
-    left: -270px;
-  }
-
-  .skill-item {
-    position: relative;
-    width: 170px;
-    margin: 15px;
-  }
-
-  .tech-skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin-top: 10px;
-  }
-
-
-  .hex {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 12px;
-
-    background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
-    background-size: contain;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hex img {
-    width: 64px;
-    height: 64px;
-  }
-
-  .skills-panel {
-    display: none;
-  }
-
-  .skills-panel.active {
-    display: block;
-  }
-
-
-
-
-
-// PROJECTS
-
-  .projects .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #343d68;
-    color: #fff;
-    padding: 5px 30px 30px;
-  }
-
-  .projects-header {
-    text-align: center;
-
-    h2 {
-      font-size: 1.9rem;
-      margin-bottom: 1px;
-      font-weight: 100;
     }
 
-    p {
-      font-size: 1.25rem;
-      margin-top: 3px;
-      opacity: 0.8;
-    }
-  }
+    .topnav #myLinks.active {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      margin-top: 36px;
 
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .project-card {
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    padding: 50px 10px 50px;
-    text-align: center;
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      margin-top: 1px;
-      font-weight: 100;
     }
 
-    &:hover {
-      border-color: #8af464;
-      transform: translateY(-1px);
+    .topnav a {
+      padding: 6px 0;
+      font-size: 1.1rem;
     }
-  }
 
-  .project-link {
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #8af464;
+    .topnav a.icon {
+      position: absolute;
+      color: #595959;
+      right: 16px;
+      top: 16px;
     }
-  }
 
+    /* HERO SECTION*/
 
+    .hero {
+      position: relative;
+      color: #3f3D56;
+    }
 
-  /* FORM CTA */
+    .hero-inner {
+      display: flex;
+      align-items: center;
+    }
 
-  .Contact-me {
-    display: flex;
-  flex-direction: column;
-  align-items: center;   // ✅ горизонтальный центр
-  justify-content: center;
-  gap: 10px;
+    .hero-visual {
+      position: relative;
+      bottom: 0;
+    }
 
-    img {
-      width: 80%;
+    .hero-photo {
+      display: block;
+      width: 200px;
+      border-radius: 12px;
+      padding-top: 10px;
+    }
+
+    .cube {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      width: 20px;
       height: auto;
     }
+
+    .zigzag {
+      position: absolute;
+      left: 20px;
+      top: 50px;
+      width: 15px;
+      height: auto;
+    }
+
+    .plus {
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      // transform: translateX(-50%);
+      color: #ff4d4d;
+      width: 15px;
+      height: auto;
+    }
+
+    .circles {
+      position: absolute;
+      top: 300px;
+      left: 45%;
+      width: 80px;
+      height: auto;
+    }
+
+    .ellipse {
+      position: absolute;
+      top: 300px;
+      left: 0;
+      width: 25px;
+      height: auto;
+    }
+
+    .hero-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding-left: 10px;
+
+      @include mixins.hero-heading(2rem, 1.4rem);
+
+      button {
+        max-width: 50%;
+        padding: 10px;
+        color: white;
+        background-color: #E84849;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          background-color: #fd7979;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+        }
+
+      }
+    }
+
+
+    /* SKILLS SECTION */
+
+    .skills-tab {
+      @include mixins.button-small;
+    }
+
+    .layout-skills {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+
+    .skills-cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skills-illustration img {
+      position: relative;
+      width: 440px;
+      height: auto;
+      left: -270px;
+    }
+
+    .skill-item {
+      position: relative;
+      width: 170px;
+      margin: 15px;
+    }
+
+    .tech-skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+
+    .hex {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 12px;
+
+      background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
+      background-size: contain;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hex img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .skills-panel {
+      display: none;
+    }
+
+    .skills-panel.active {
+      display: block;
+    }
+
+
+
+
+
+    // PROJECTS
+
+    .title-section {
+      @include mixins.title-section;
+    }
+
+    .projects .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #343d68;
+      color: #fff;
+      padding: 5px 30px 30px;
+    }
+
+    .projects-header {
+      text-align: center;
+
+      h2 {
+        font-size: 1.9rem;
+        margin-bottom: 1px;
+        font-weight: 100;
+      }
+
+      p {
+        font-size: 1.25rem;
+        margin-top: 3px;
+        opacity: 0.8;
+      }
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      padding: 50px 10px 50px;
+      text-align: center;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        margin-top: 1px;
+        font-weight: 100;
+      }
+
+      &:hover {
+        border-color: #8af464;
+        transform: translateY(-1px);
+      }
+    }
+
+    .project-link {
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8af464;
+      }
+    }
+
+
+
+    /* FORM CTA */
+
+    .Contact-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // ✅ горизонтальный центр
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+
+    #formCta fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #formCta legend {
+      position: absolute;
+      left: -9999px;
+      /* visually hidden, but accessible */
+    }
+
+
+
+    #formCta h2 {
+      margin-bottom: 24px;
+    }
+
+    #formCta form {
+      max-width: 80%;
+      background: #fff;
+      padding: 32px 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(255, 11, 11, 0.08);
+      text-align: left;
+    }
+
+    #formCta label {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    #formCta input,
+    #formCta select,
+    #formCta textarea {
+      margin-top: 6px;
+      padding: 12px 14px;
+      font-size: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    #formCta input:focus,
+    #formCta textarea:focus,
+    #formCta select:focus {
+      border-color: #343D68;
+    }
+
+
+    #formCta button {
+      width: 100%;
+      padding: 14px;
+      background: #343D68;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background-image: url("../assets/contactForm/paperPlane.svg");
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      background-size: 25px 25px;
+    }
+
+    #formCta button:hover {
+      background: #2b335a;
+      background-image: url("../assets/contactForm/paperPlane.svg");
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      background-size: 25px 25px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+      position: relative;
+      background-color: #343D68;
+      color: #fff;
+    }
+
+    .footer-wave {
+      display: block;
+      width: 100%;
+      height: 80px;
+    }
+
+    .footer-content {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 40px 16px;
+      text-align: left;
+    }
+
+    .footer-title {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
+    .social-links img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .footer-projects {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .github-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      color: #7fd3ff;
+      text-decoration: none;
+    }
+
+    .github-link img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .social-links img {
+      filter: brightness(0) invert(1);
+    }
+
   }
-
-  #formCta fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #formCta legend {
-    position: absolute;
-    left: -9999px;
-    /* visually hidden, but accessible */
-  }
-
-
-
-  #formCta h2 {
-    margin-bottom: 24px;
-  }
-
-  #formCta form {
-    max-width: 80%;
-    background: #fff;
-    padding: 32px 24px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(255, 11, 11, 0.08);
-    text-align: left;
-  }
-
-  #formCta label {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    margin-bottom: 16px;
-  }
-
-  #formCta input,
-  #formCta select,
-  #formCta textarea {
-    margin-top: 6px;
-    padding: 12px 14px;
-    font-size: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-  }
-
-  #formCta input:focus,
-  #formCta textarea:focus,
-  #formCta select:focus {
-    border-color: #343D68;
-  }
-
-
-  #formCta button {
-    width: 100%;
-    padding: 14px;
-    background: #343D68;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-image: url("../assets/contactForm/paperPlane.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    background-size: 25px 25px;
-  }
-
-  #formCta button:hover {
-    background: #2b335a;
-    background-image: url("../assets/contactForm/paperPlane.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    background-size: 25px 25px;
-  }
-
-
-  /* FOOTER */
-  .footer {
-    position: relative;
-    background-color: #343D68;
-    color: #fff;
-  }
-
-  .footer-wave {
-    display: block;
-    width: 100%;
-    height: 80px;
-  }
-
-  .footer-content {
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 40px 16px;
-    text-align: left;
-  }
-
-  .footer-title {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 24px;
-  }
-
-  .social-links img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .footer-projects {
-    margin-top: 24px;
-    font-size: 14px;
-  }
-
-  .github-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 8px;
-    color: #7fd3ff;
-    text-decoration: none;
-  }
-
-  .github-link img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .social-links img {
-    filter: brightness(0) invert(1);
-  }
-
-}
