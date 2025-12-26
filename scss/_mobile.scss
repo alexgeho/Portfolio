@@ -76,10 +76,57 @@
     bottom: 0;
   }
 
-  .hero-visual img {
+  .hero-photo {
+    display: block;
     width: 200px;
+    border-radius: 12px;
+    padding-top: 20px;
+  }
+
+  .cube {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 30px;
     height: auto;
   }
+
+  .zigzag {
+    position: absolute;
+    left: -10px;
+    top: 50px;
+    width: 25px;
+    height: auto;
+  }
+
+  .plus {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    // transform: translateX(-50%);
+    color: #ff4d4d;
+    width: 20px;
+    height: auto;
+  }
+
+  .circles {
+    position: absolute;
+    top: 290px;
+    left: 45%;
+  }
+
+  .ellipse {
+    position: absolute;
+    top: 320px;
+    left: 10%;
+  }
+
+  .hero-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   /* SKILLS SECTION */
 
