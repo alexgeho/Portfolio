@@ -262,7 +262,8 @@
     }
   }
 
-  /* CTA */
+
+  /* FORM CTA */
 
   .Contact-me {
     display: flex;
@@ -285,10 +286,7 @@
   #formCta legend {
     position: absolute;
     left: -9999px;
-    /* visually hidden, but accessible */
   }
-
-
 
   #formCta h2 {
     margin-bottom: 24px;
@@ -355,7 +353,6 @@
 
 
   /* FOOTER */
-
 
   .footer .container {
     background-color: #343D68;
