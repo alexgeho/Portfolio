@@ -202,65 +202,65 @@
 
   // PROJECTS
 
-.projects .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #343d68;
-  color: #fff;
-  padding: 5px 30px 60px;
-}
-
-.projects-header {
-  text-align: center;
-
-  h2 {
-    font-size: 1.9rem;
-    margin-bottom: 1px;
-    font-weight: 100;
+  .projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #343d68;
+    color: #fff;
+    padding: 5px 30px 60px;
   }
 
-  p {
-    font-size: 1.25rem;
-    margin-top: 3px;
-    opacity: 0.8;
-  }
-}
+  .projects-header {
+    text-align: center;
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
-}
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1px;
+      font-weight: 100;
+    }
 
-.project-card {
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  padding: 50px 10px 50px;
-  text-align: center;
-
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 1px;
-    font-weight: 100;
+    p {
+      font-size: 1.25rem;
+      margin-top: 3px;
+      opacity: 0.8;
+    }
   }
 
-  &:hover {
-    border-color: #8af464;
-    transform: translateY(-1px);
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
   }
-}
 
-.project-link {
-  font-size: 1.1rem;
-  color: #fff;
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  transition: color 0.3s ease;
+  .project-card {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 50px 10px 50px;
+    text-align: center;
 
-  &:hover {
-    color: #8af464;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      margin-top: 1px;
+      font-weight: 100;
+    }
+
+    &:hover {
+      border-color: #8af464;
+      transform: translateY(-1px);
+    }
   }
-}
+
+  .project-link {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8af464;
+    }
+  }
 
 
   /* CTA */
@@ -307,7 +307,7 @@
   #formCta label {
     display: flex;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 16px;
   }
 
@@ -316,7 +316,7 @@
   #formCta textarea {
     margin-top: 6px;
     padding: 12px 14px;
-    font-size: 14px;
+    font-size: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     outline: none;
@@ -336,7 +336,7 @@
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.5rem;
     cursor: pointer;
     background-image: url("../assets/contactForm/paperPlane.svg");
     background-repeat: no-repeat;
@@ -346,6 +346,12 @@
 
   #formCta button:hover {
     background: #2b335a;
+    background-image: url("../assets/contactForm/paperPlane.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px 25px;
+
+
   }
 
 
