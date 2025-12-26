@@ -202,41 +202,66 @@
 
   // PROJECTS
 
-  .projects {
-    background-color: #343D68;
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #343d68;
+  color: #fff;
+  padding: 5px 30px 60px;
+}
+
+.projects-header {
+  text-align: center;
+
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1px;
+    font-weight: 100;
   }
 
-  .sectionTitle {
-    text-align: center;
-    color: #E1E1E1;
-    padding-top: 10px;
+  p {
+    font-size: 1.25rem;
+    margin-top: 3px;
+    opacity: 0.8;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.project-card {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 50px 10px 50px;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    font-weight: 100;
   }
 
-  .sectionTitle h2,
-  .sectionTitle h3 {
-    font-weight: 300;
+  &:hover {
+    border-color: #8af464;
+    transform: translateY(-1px);
   }
+}
 
-  .projects-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
-    justify-items: center;
-    padding: 5px;
+.project-link {
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #8af464;
   }
+}
 
-  .project-card {
-    background-color: #2b345d; // тёмный фон как в макете
-    border: 2px solid #7b7b7b; // бирюзовая рамка
-    padding: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #fff;
-
-    a {
-      color: #ffffff;
-    }
-  }
 
   /* CTA */
 
