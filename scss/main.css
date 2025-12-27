@@ -788,6 +788,15 @@
     background-position: right 20px center;
     background-size: 25px 25px;
   }
+  .blog-preview {
+    max-width: 640px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  .blog-post-preview time {
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
   /* FOOTER */
   .footer .container {
     background-color: #343D68;
