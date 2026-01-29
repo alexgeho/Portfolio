@@ -1,386 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./scss/main.css" type="text/css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Portfolio</title>
-        <meta name="description" content="">
-        <meta property="og:title" content="">
-        <meta property="og:type" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
-        <meta property="og:image:alt" content="">
-        <link rel="icon" href="/favicon.ico" sizes="any">
-        <link rel="icon" href="/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="icon.png">
-        <link rel="manifest" href="site.webmanifest">
-        <meta name="theme-color" content="#fafafa">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#fafafa">
+</head>
 
-    <body>
+<body>
 
-        <header>
+    <header>
+        <div class="container">
+            <nav class="topnav" aria-label="Main navigation">
+                <div class="brand">
+                    <a href="#home">Alexander Gerhard</a>
+                    <h1>Fullstack Developer</h1>
+                </div>
+
+                <div id="myLinks">
+
+                    <a href="#projects" class="projectsMenu">Projects<img src="./assets/gearsMenu.svg" alt=""></a>
+                    <a href="#skills">Skills</a>
+                    <a href="#formCta">Blog</a>
+                    <a href="#formCta">Blog</a>
+                    <a href="#formCta">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
             <div class="container">
-                <nav class="topnav" aria-label="Main navigation">
-                    <div class="brand">
-                        <a href="#home">Alexander Gerhard</a>
-                        <h1>Fullstack Developer</h1>
+
+                <div class="hero-inner">
+
+                    <div class="hero-content">
+                        <h1>Turning ideas into scalable web solutions</h1>
+                        <p>Fullstack development with focus on quality and architecture</p>
+                        <button type="button" onclick="location.href='#formCta'">Contact me</button>
                     </div>
 
-                    <div id="myLinks">
+                    <div class="hero-visual">
 
-                        <a href="#projects" class="projectsMenu">Projects<img src="./assets/gearsMenu.svg" alt=""></a>
-                        <a href="#skills">Skills</a>
-                        <a href="#formCta">Blog</a>
-                        <a href="#formCta">Blog</a>
-                        <a href="#formCta">Contact</a>
+                        <div class="hero-photo">
+                            <img src="./assets//hero/JagGrey.png" alt="Alexander Gerhard" class="hero-photo">
+                        </div>
+
+
+                        <img src="./assets/hero/cube.svg" class="cube" alt="" aria-hidden="true">
+                        <img src="assets/hero/zigzags.svg" class="zigzag" alt="" aria-hidden="true">
+                        <img src="./assets/hero/ellipse.svg" class="ellipse" alt="" aria-hidden="true">
+                        <img src="assets/hero/circles.svg" class="circles" alt="" aria-hidden="true">
+                        <img src="assets/hero/plus.svg" class="plus" alt="" aria-hidden="true">
+
+
                     </div>
 
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </nav>
+                </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-
-            <section id="hero" class="hero">
-                <div class="container">
-
-                    <div class="hero-inner">
-
-                        <div class="hero-content">
-                            <h1>Turning ideas into scalable web solutions</h1>
-                            <p>Fullstack development with focus on quality and architecture</p>
-                            <button type="button" onclick="location.href='#formCta'">Contact me</button>
-                        </div>
-
-                        <div class="hero-visual">
-
-                            <div class="hero-photo">
-                                <img src="./assets//hero/JagGrey.png" alt="Alexander Gerhard" class="hero-photo">
-                            </div>
-
-
-                            <img src="./assets/hero/cube.svg" class="cube" alt="" aria-hidden="true">
-                            <img src="assets/hero/zigzags.svg" class="zigzag" alt="" aria-hidden="true">
-                            <img src="./assets/hero/ellipse.svg" class="ellipse" alt="" aria-hidden="true">
-                            <img src="assets/hero/circles.svg" class="circles" alt="" aria-hidden="true">
-                            <img src="assets/hero/plus.svg" class="plus" alt="" aria-hidden="true">
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <div class="container">
-
-                    <div class="title-section">
-                        <h2>Development Skills</h2>
-                        <p> Overview of my technical expertise and professional focus.</p>
-                    </div>
-
-                    <div class="layout-skills">
-
-                        <div class="skills-interactive">
-
-                            <aside class="skills-menu">
-                                <button class="skills-tab active" data-target="tech">Tech Skills</button>
-                                <button class="skills-tab" data-target="architecture">Architecture</button>
-                                <button class="skills-tab" data-target="focus">Focus</button>
-                            </aside>
-
-                            <div class="skills-panels">
-
-                                <div class="skills-panel active" id="panel-tech">
-                                    <div class="tech-skills">
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets//skills/techSkills/nestjs.svg" alt="nestJs">
-                                            </div>
-                                            <p>NestJs</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/js.svg" alt="JavaScript">
-                                            </div>
-                                            <p>JavaScript</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/typescript.svg" alt="Typescript">
-                                            </div>
-                                            <p>Typescript</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/react.svg" alt="react">
-                                            </div>
-                                            <p>React</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/mongodb.svg" alt="mongodb">
-                                            </div>
-                                            <p>MongoDb</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/css.svg" alt="css">
-                                            </div>
-                                            <p>CSS</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/html.svg" alt="html">
-                                            </div>
-                                            <p>Html</p>
-                                        </div>
-
-                                        <div class="skill">
-                                            <div class="hex">
-                                                <img src="./assets/skills/techSkills/figma.svg" alt="figma">
-                                            </div>
-                                            <p>Figma</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skills-panel" id="panel-architecture">
-                                    <div class="architecture-grid">
-
-                                        <!-- Architecture / Core -->
-                                        <ul class="architecture-col">
-                                            <li class="col-title">Architecture</li>
-                                            <li>SOLID principles</li>
-                                            <li>Clean Architecture</li>
-                                            <li>CQRS</li>
-                                            <li>Separation of concerns</li>
-                                            <li>Layered architecture</li>
-                                            <li>Dependency Injection</li>
-                                        </ul>
-
-                                        <!-- Backend -->
-                                        <ul class="architecture-col">
-                                            <li class="col-title">Backend</li>
-                                            <li>REST API design</li>
-                                            <li>DTO & input validation</li>
-                                            <li>Authentication & Authorization (JWT)</li>
-                                            <li>Repository pattern</li>
-                                            <li>Error handling & logging</li>
-                                            <li>Guards, Pipes, Interceptors</li>
-                                        </ul>
-
-                                        <!-- Frontend -->
-                                        <ul class="architecture-col">
-                                            <li class="col-title">Frontend</li>
-                                            <li>Component-based architecture</li>
-                                            <li>UI / logic / data separation</li>
-                                            <li>Semantic HTML & accessibility (a11y)</li>
-                                            <li>Responsive & mobile-first layout</li>
-                                            <li>Reusable UI components</li>
-                                            <li>Basic performance considerations</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-
-                                <div class="skills-panel" id="panel-focus">
-                                    <h3>Focus</h3>
-                                    <div class="gridTest">
-                                        <p>reconstruction</p>
-                                        <p>reconstruction</p>
-                                        <p>Under reconstruction</p>
-                                        <p>reconstruction</p>
-                                        <p>reconstruction</p>
-                                        <p>Under reconstruction</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="skills-man">
-                            <img src="./assets/skills/skills-man.svg" alt="Developer illustration">
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <section id="projects" class="projects">
-                <div class="container">
-                    <div class="projects-header">
-                        <h2>⚙️ Projects</h2>
-                        <p>Some of my projects include:</p>
-                    </div>
-
-                    <div class="projects-grid">
-                        <article class="project-card">
-                            <h3>Timetracker</h3>
-                            <a href="#" class="project-link">Learn More →</a>
-                        </article>
-
-                        <article class="project-card">
-                            <h3>Bloggerplatform</h3>
-                            <a href="#" class="project-link">Learn More →</a>
-                        </article>
-
-                        <article class="project-card">
-                            <h3>App for study</h3>
-                            <a href="#" class="project-link">Learn More →</a>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="formCta">
-                <div class="container">
-
-                    <div class="title-section">
-                        <h2>Every problem has more than one solution.</h2>
-                        <p>Let’s find the right one.</p>
-                    </div>
-
-                    <div class="Contact-me">
-
-                        <img src="./assets/contactForm/contactMe.svg" alt="Illustration of contact form"
-                            class="contact-illustration">
-
-                        <form action="#" onsubmit="return false;">
-                            <fieldset>
-                                <legend>Contact form</legend>
-
-                                <label for="firstname">
-                                    Name
-                                    <input type="text" id="firstname" name="firstname">
-                                </label>
-
-                                <label for="email">
-                                    E-mail / Tel. number
-                                    <input type="email" id="email" name="email">
-                                </label>
-
-                                <label for="message">
-                                    Message
-                                    <textarea id="message" rows="4"></textarea>
-                                </label>
-
-                                <button type="submit">Send message</button>
-                            </fieldset>
-                        </form>
-
-                    </div>
-                </div>
-
-                </div>
-            </section>
-
-            <section class="blog-preview">
-                <h2>Blog</h2>
-                <p>Thoughts on architecture, frontend, and scalable web solutions.</p>
-
-                <article class="blog-post-preview">
-                    <h3>Coming soon</h3>
-                    <time datetime="2025-01-01">January 2025</time>
-                    <p>Articles about frontend architecture and real-world development.</p>
-                </article>
-            </section>
-
-
-        </main>
-
-        <footer class="footer">
-
+        <section id="skills">
             <div class="container">
 
+                <div class="title-section">
+                    <h2>Development Skills</h2>
+                    <p> Overview of my technical expertise and professional focus.</p>
+                </div>
 
-                <svg class="footer-wave" viewBox="0 0 1440 90" preserveAspectRatio="none">
-                    <path d="M0,40 C120,60 240,20 360,30 480,40 600,80 720,70
+                <div class="layout-skills">
+
+                    <div class="skills-interactive">
+
+                        <aside class="skills-menu">
+                            <button class="skills-tab active" data-target="tech">Tech Skills</button>
+                            <button class="skills-tab" data-target="architecture">Architecture</button>
+                            <button class="skills-tab" data-target="focus">Focus</button>
+                        </aside>
+
+                        <div class="skills-panels">
+
+                            <div class="skills-panel active" id="panel-tech">
+                                <div class="tech-skills">
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets//skills/techSkills/nestjs.svg" alt="nestJs">
+                                        </div>
+                                        <p>NestJs</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/js.svg" alt="JavaScript">
+                                        </div>
+                                        <p>JavaScript</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/typescript.svg" alt="Typescript">
+                                        </div>
+                                        <p>Typescript</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/react.svg" alt="react">
+                                        </div>
+                                        <p>React</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/mongodb.svg" alt="mongodb">
+                                        </div>
+                                        <p>MongoDb</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/css.svg" alt="css">
+                                        </div>
+                                        <p>CSS</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/html.svg" alt="html">
+                                        </div>
+                                        <p>Html</p>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="hex">
+                                            <img src="./assets/skills/techSkills/figma.svg" alt="figma">
+                                        </div>
+                                        <p>Figma</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-panel" id="panel-architecture">
+                                <div class="architecture-grid">
+
+                                    <!-- Architecture / Core -->
+                                    <ul class="architecture-col">
+                                        <li class="col-title">Architecture</li>
+                                        <li>SOLID principles</li>
+                                        <li>Clean Architecture</li>
+                                        <li>CQRS</li>
+                                        <li>Separation of concerns</li>
+                                        <li>Layered architecture</li>
+                                        <li>Dependency Injection</li>
+                                    </ul>
+
+                                    <!-- Backend -->
+                                    <ul class="architecture-col">
+                                        <li class="col-title">Backend</li>
+                                        <li>REST API design</li>
+                                        <li>DTO & input validation</li>
+                                        <li>Authentication & Authorization (JWT)</li>
+                                        <li>Repository pattern</li>
+                                        <li>Error handling & logging</li>
+                                        <li>Guards, Pipes, Interceptors</li>
+                                    </ul>
+
+                                    <!-- Frontend -->
+                                    <ul class="architecture-col">
+                                        <li class="col-title">Frontend</li>
+                                        <li>Component-based architecture</li>
+                                        <li>UI / logic / data separation</li>
+                                        <li>Semantic HTML & accessibility (a11y)</li>
+                                        <li>Responsive & mobile-first layout</li>
+                                        <li>Reusable UI components</li>
+                                        <li>Basic performance considerations</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="skills-panel" id="panel-focus">
+                                <h3>Focus</h3>
+                                <div class="gridTest">
+                                    <p>reconstruction</p>
+                                    <p>reconstruction</p>
+                                    <p>Under reconstruction</p>
+                                    <p>reconstruction</p>
+                                    <p>reconstruction</p>
+                                    <p>Under reconstruction</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skills-man">
+                        <img src="./assets/skills/skills-man.svg" alt="Developer illustration">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="projects-header">
+                    <h2>⚙️ Projects</h2>
+                    <p>Some of my projects include:</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Timetracker</h3>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Bloggerplatform</h3>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>App for study</h3>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="formCta">
+            <div class="container">
+
+                <div class="title-section">
+                    <h2>Every problem has more than one solution.</h2>
+                    <p>Let’s find the right one.</p>
+                </div>
+
+                <div class="Contact-me">
+
+                    <img src="./assets/contactForm/contactMe.svg" alt="Illustration of contact form"
+                        class="contact-illustration">
+
+                    <form action="#" onsubmit="return false;">
+                        <fieldset>
+                            <legend>Contact form</legend>
+
+                            <label for="firstname">
+                                Name
+                                <input type="text" id="firstname" name="firstname">
+                            </label>
+
+                            <label for="email">
+                                E-mail / Tel. number
+                                <input type="email" id="email" name="email">
+                            </label>
+
+                            <label for="message">
+                                Message
+                                <textarea id="message" rows="4"></textarea>
+                            </label>
+
+                            <button type="submit">Send message</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="blog-preview">
+            <h2>Blog</h2>
+            <p>Thoughts on architecture, frontend, and scalable web solutions.</p>
+
+            <article class="blog-post-preview">
+                <h3>Coming soon</h3>
+                <time datetime="2025-01-01">January 2025</time>
+                <p>Articles about frontend architecture and real-world development.</p>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <svg class="footer-wave" viewBox="0 0 1440 90" preserveAspectRatio="none">
+                <path d="M0,40 C120,60 240,20 360,30 480,40 600,80 720,70
          840,60 960,20 1080,30 1200,40 1320,70 1440,60 L1440,0 L0,0 Z" fill="#fff">
-                    </path>
-                </svg>
+                </path>
+            </svg>
 
-                <div class="footer-content">
+            <div class="footer-content">
 
 
 
-                    <p class="footer-title">My social media links:</p>
+                <p class="footer-title">My social media links:</p>
 
-                    <ul class="social-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/alexandergerhard/" target="_blank" rel="noopener"
-                                aria-label="LinkedIn">
-                                <img src="./assets/linkedin.svg" alt="">
-                            </a>
-                        </li>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexandergerhard/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <img src="./assets/linkedin.svg" alt="">
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="https://wa.me/46707577575" aria-label="WhatsApp">
-                                <img src="./assets/whatsapp.svg" alt="">
-                            </a>
-                        </li>
+                    <li>
+                        <a href="https://wa.me/46707577575" aria-label="WhatsApp">
+                            <img src="./assets/whatsapp.svg" alt="">
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="mailto:alexander.gerhard@outlook.com" aria-label="Email">
-                                <img src="./assets/email.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                    <li>
+                        <a href="mailto:alexander.gerhard@outlook.com" aria-label="Email">
+                            <img src="./assets/email.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
 
-                    <p class="footer-projects">
-                        More projects I’ve worked on
-                    </p>
+                <p class="footer-projects">
+                    More projects I’ve worked on
+                </p>
 
-                    <a class="github-link" href="https://github.com/alexgeho" target="_blank" rel="noopener">
-                        <img src="./assets/github.svg" alt="">
-                        <span>@alexander-gerhard on GitHub</span>
-                    </a>
+                <a class="github-link" href="https://github.com/alexgeho" target="_blank" rel="noopener">
+                    <img src="./assets/github.svg" alt="">
+                    <span>@alexander-gerhard on GitHub</span>
+                </a>
 
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <script>
-            function myFunction() {
-                const menu = document.getElementById("myLinks");
-                menu.classList.toggle("active");
-            }
+    <script>
+        function myFunction() {
+            const menu = document.getElementById("myLinks");
+            menu.classList.toggle("active");
+        }
 
-            const skillTabs = document.querySelectorAll('.skills-tab');
-            const skillPanels = document.querySelectorAll('.skills-panel');
+        const skillTabs = document.querySelectorAll('.skills-tab');
+        const skillPanels = document.querySelectorAll('.skills-panel');
 
-            skillTabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const target = tab.dataset.target;
+        skillTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
 
-                    skillTabs.forEach(t => t.classList.remove('active'));
-                    skillPanels.forEach(p => p.classList.remove('active'));
+                skillTabs.forEach(t => t.classList.remove('active'));
+                skillPanels.forEach(p => p.classList.remove('active'));
 
-                    tab.classList.add('active');
-                    document.getElementById(`panel-${target}`).classList.add('active');
-                });
+                tab.classList.add('active');
+                document.getElementById(`panel-${target}`).classList.add('active');
             });
-        </script>
+        });
+    </script>
 
-    </body>
+</body>
 
 </html>
