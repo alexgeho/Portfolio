@@ -551,7 +551,7 @@ header {
   text-decoration: underline;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -575,10 +575,10 @@ header {
     align-items: center;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .brand h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 200;
     margin: 0;
     font-style: normal;
@@ -586,6 +586,14 @@ header {
   .topnav a.projectsMenu {
     color: #E84849;
     gap: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .topnav a {
+    font-size: 2rem;
+  }
+  .brand h1 {
+    font-size: 2.2rem;
   }
 }
 /* HERO SECTION*/
