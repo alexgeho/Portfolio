@@ -1,11 +1,14 @@
 /* BURGER MENU */
 
 const menuBtn = document.querySelector('.menu-toggle');
+console.log('menuBtn:::::', menuBtn);
+
 const menu = document.getElementById('myLinks');
 
 menuBtn.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('active');
-    menuBtn.setAttribute('aria-expanded', isOpen);
+  const isOpen = menu.classList.toggle('active');
+  menuBtn.classList.toggle('active', isOpen);
+  menuBtn.setAttribute('aria-expanded', isOpen);
 });
 
 /* SKILLS SECTION */
