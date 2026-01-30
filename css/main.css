@@ -1,140 +1,3 @@
-.title-section {
-  max-width: 640px;
-  margin: 80px auto 26px;
-  text-align: center;
-  position: relative;
-}
-.title-section h2 {
-  font-size: clamp(1.9rem, 3.5vw, 3rem);
-  font-weight: 400;
-  line-height: 1.2;
-  color: #343D68;
-  margin-bottom: 4px;
-}
-.title-section p {
-  font-size: 2.05rem;
-  line-height: 1.6;
-  color: #6b7280;
-  margin: 0;
-}
-.title-section::after {
-  content: "";
-  display: block;
-  width: 56px;
-  height: 3px;
-  margin: 28px auto 0;
-  border-radius: 2px;
-  background-color: #E84849;
-}
-
-.skills-tab {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  color: white;
-  background-color: #E84849;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  font-size: 1rem;
-  padding: 10px 6px;
-}
-.skills-tab:hover {
-  background-color: rgb(236.5553398058, 108.2446601942, 109.0466019417);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-}
-
-.layout-skills {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 40px;
-  align-items: start;
-}
-
-.hex {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 12px;
-  background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
-  background-size: contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skills-panels {
-  min-height: 360px;
-}
-
-.tech-skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 30px;
-}
-
-.architecture-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.architecture-col {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.architecture-col li {
-  line-height: 1.5;
-  margin-bottom: 12px;
-  font-size: 1rem;
-}
-
-.architecture-col .col-title {
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-.skills-man img,
-.skill img {
-  max-width: 100%;
-  height: auto;
-}
-
-.skill img {
-  height: 80px;
-  width: auto;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.skills-panel {
-  display: none;
-}
-
-.skills-panel.active {
-  display: block;
-}
-
-.gridTest {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  border: 1px solid green;
-}
-
 .projects .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -813,8 +676,8 @@ main {
 
 .tech-skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
   margin-top: 10px;
 }
 
@@ -851,6 +714,147 @@ main {
   display: block;
 }
 
+.skills-man {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA 768 PX */
+@media (min-width: 768px) {
+  .title-section {
+    max-width: 640px;
+    margin: 80px auto 26px;
+    text-align: center;
+    position: relative;
+  }
+  .title-section h2 {
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: #343D68;
+    margin-bottom: 4px;
+  }
+  .title-section p {
+    font-size: 2.05rem;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+  }
+  .title-section::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 3px;
+    margin: 28px auto 0;
+    border-radius: 2px;
+    background-color: #E84849;
+  }
+  .skills-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    background-color: #E84849;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1rem;
+    padding: 10px 6px;
+  }
+  .skills-tab:hover {
+    background-color: rgb(236.5553398058, 108.2446601942, 109.0466019417);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+  .layout-skills {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 40px;
+    align-items: start;
+  }
+  .hex {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 12px;
+    background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-panels {
+    min-height: 360px;
+  }
+  .tech-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+  .architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .architecture-col {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .architecture-col li {
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+  .architecture-col .col-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .skills-man {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-man img {
+    max-width: 100%;
+    height: auto;
+  }
+  .skill img {
+    height: 60%;
+    width: auto;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills-panel {
+    display: none;
+  }
+  .skills-panel.active {
+    display: block;
+  }
+}
+/* MEDIA 1200 PX */
+@media (min-width: 1200px) {
+  .tech-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .skills-man img {
+    max-width: 800px;
+    height: auto;
+  }
+}
 .title-section {
   max-width: 640px;
   margin: 80px auto 26px;
