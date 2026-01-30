@@ -233,23 +233,7 @@
     }
 
 
-    .skills-cards {
-      display: flex;
-      flex-direction: column;
-    }
 
-    .skills-illustration img {
-      position: relative;
-      width: 440px;
-      height: auto;
-      left: -270px;
-    }
-
-    .skill-item {
-      position: relative;
-      width: 170px;
-      margin: 15px;
-    }
 
     .tech-skills {
       display: grid;
@@ -257,6 +241,17 @@
       gap: 30px;
 
       margin-top: 10px;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      p {
+        margin: 0;
+      }
+
     }
 
 
