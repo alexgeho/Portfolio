@@ -1,8 +1,6 @@
 /* BURGER MENU */
 
 const menuBtn = document.querySelector('.menu-toggle');
-console.log('menuBtn:::::', menuBtn);
-
 const menu = document.getElementById('myLinks');
 
 menuBtn.addEventListener('click', () => {
