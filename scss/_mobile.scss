@@ -208,6 +208,14 @@
 
     /* SKILLS SECTION */
 
+    .skills-menu {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+    }
+
     .skills-tab {
       @include mixins.button-small;
     }
@@ -216,6 +224,12 @@
       display: flex;
       flex-direction: column-reverse;
       gap: 40px;
+    }
+
+    .skills-interactive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
 
@@ -239,8 +253,9 @@
 
     .tech-skills {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+
       margin-top: 10px;
     }
 
