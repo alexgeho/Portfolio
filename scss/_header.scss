@@ -1,0 +1,106 @@
+ @use "mixins";
+  @use "variables";
+
+
+
+
+    .brand {
+      text-align: left;
+    }
+
+    .brand a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #595959;
+    }
+
+    .brand h1 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 2px 0 0;
+      color: #E84849;
+    }
+
+
+
+    .menu-toggle {
+      margin-left: auto;
+
+      width: 30px;
+      height: 32px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 6px;
+
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+
+      z-index: 1000;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: #595959;
+      border-radius: 2px;
+      transition: 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    //////
+    .topnav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 15px 10px;
+    }
+
+    .topnav #myLinks {
+      width: 100%;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      overflow: hidden;
+      max-height: 0;
+      transform: translateX(-120%);
+      transition: transform 0.3s ease, max-height 0.3s ease;
+    }
+
+    .topnav #myLinks.active {
+      margin-top: 10px;
+      transform: translateX(0);
+      max-height: 300px;
+      font-size: 1.3rem;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+    }
+

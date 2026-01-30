@@ -1,6 +1,12 @@
 @use "variables";
 @use "mixins";
-@use "mobile";
 @use "desktop";
 @use "layout";
+
+@use "header";
+@use "hero";
+@use "skills";
+@use "projects";
+@use "contact-form";
+@use "footer";
 

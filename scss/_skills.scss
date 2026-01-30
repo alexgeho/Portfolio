@@ -1,0 +1,74 @@
+  @use "mixins";
+  @use "variables";
+
+/* SKILLS SECTION */
+
+  .skills-menu {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  .skills-tab {
+    @include mixins.button-small;
+  }
+
+  .layout-skills {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .skills-interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    margin-top: 10px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+  }
+
+
+  .hex {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 12px;
+
+    background: url("../assets/skills/techSkills/polygon.svg") no-repeat center;
+    background-size: contain;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hex img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .skills-panel {
+    display: none;
+  }
+
+  .skills-panel.active {
+    display: block;
+  }
