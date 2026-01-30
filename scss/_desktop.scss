@@ -1,49 +1,7 @@
  @use "mixins";
  @use "variables";
 
- @media (min-width: 1200px) {
-
-
-   .topnav a.icon {
-     display: none;
-   }
-
-   .topnav #myLinks {
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
-     display: flex;
-     gap: 24px;
-   }
-
-   .topnav {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 10px;
-   }
-
-   .topnav a {
-     display: inline-flex;
-     align-items: center;
-     color: rgb(0, 0, 0);
-     text-decoration: none;
-     font-size: 1.25rem;
-
-   }
-
-   .brand h1 {
-     font-size: 1.4rem;
-     font-weight: 200;
-     margin: 0;
-     font-style: normal;
-   }
-
-   .topnav a.projectsMenu {
-     color: #E84849;
-     gap: 5px;
-   }
-
+ 
    //HERO
    .hero {
      position: relative;
@@ -455,4 +413,4 @@
      filter: brightness(0) invert(1);
    }
 
- }
+ 
