@@ -3,10 +3,6 @@
 
  // PROJECTS
 
- .title-section {
-     @include mixins.title-section;
- }
-
  .projects .container {
      max-width: 1200px;
      margin: 0 auto;
@@ -37,35 +33,81 @@
      gap: 20px;
  }
 
- .project-card {
-     border: 2px solid rgba(255, 255, 255, 0.25);
-     padding: 50px 10px 50px;
-     text-align: center;
+ ///////
+ .external {
+     width: auto;
+     min-height: 90px;
+     display: grid;
+     place-items: center;
+ }
+
+ .internal {
+     border: 2px solid #262c4c;
+     width: 340px;
+     min-height: 260px;
+     padding: 10px;
+     margin: 20px;
+     place-items: center;
+     background-color: #262c4c;
+     overflow: hidden;
+ }
+
+ .internal:hover {
+     border-image: linear-gradient(45deg, #262c4c, #7c87c3) 1;
+ }
+
+ .img-block {
+     height: 270px;
+     max-width: 250px;
+     overflow: hidden;
+     position: relative;
+
+     img {
+         width: 240px;
+         height: auto;
+         position: relative;
+     }
+ }
+
+ .internal a {
+     padding: 12px;
+     background-color: #343d68;
+     border-radius: 5px;
+     border: 1px solid white;
+     color: white;
+     margin-bottom: 20px;
+     display: inline-block;
+     font-style: none;
+     text-transform: capitalize;
+     text-decoration: none;
+     font-size: 1.4rem;
+     font-weight: 100;
+
+ }
+
+ .headlines {
+     position: static;
+     color: white;
+     place-items: center;
 
      h3 {
-         font-size: 1.5rem;
-         margin-bottom: 10px;
-         margin-top: 1px;
+         margin: 25px 0px 5px;
          font-weight: 100;
+         font-size: 1.5rem;
      }
 
-     &:hover {
-         border-color: #8af464;
-         transform: translateY(-1px);
-     }
- }
-
- .project-link {
-     font-size: 1.1rem;
-     color: #fff;
-     text-decoration: underline;
-     text-underline-offset: 6px;
-     transition: color 0.3s ease;
-
-     &:hover {
-         color: #8af464;
+     p {
+         margin: 15px 0px 30px;
+         font-weight: 100;
+         font-size: 1.2rem;
      }
  }
+
+
+ .btn-project:hover {
+     border-image: linear-gradient(45deg, #8af464, #e6ffdd) 1;
+ }
+
 
  /* MEDIA 768 PX */
 
@@ -100,37 +142,10 @@
          grid-template-columns: repeat(3, 1fr);
          gap: 80px;
      }
-
-     .project-card {
-         border: 2px solid rgba(255, 255, 255, 0.25);
-         padding: 50px 10px 50px;
-         text-align: center;
-
-         h3 {
-             font-size: 1.5rem;
-             margin-bottom: 10px;
-             margin-top: 1px;
-             font-weight: 100;
-         }
-
-         &:hover {
-             border-color: #8af464;
-             transform: translateY(-1px);
-         }
-     }
-
-     .project-link {
-         font-size: 1.1rem;
-         color: #fff;
-         text-decoration: underline;
-         text-underline-offset: 6px;
-         transition: color 0.3s ease;
-
-         &:hover {
-             color: #8af464;
-         }
-     }
  }
+
+
+
 
 
  /* MEDIA 1200 PX */
@@ -146,17 +161,6 @@
 
          p {
              font-size: 2rem;
-         }
-     }
-
-
-     .project-card {
-         a {
-             font-size: 1.8rem;
-         }
-
-         h3 {
-            font-size: 2rem;
          }
      }
 
