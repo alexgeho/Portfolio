@@ -1,157 +1,3 @@
-/* FORM CTA */
-.Contact-me {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 30px;
-}
-.Contact-me img {
-  width: 500px;
-  height: auto;
-}
-
-#formCta fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-#formCta legend {
-  position: absolute;
-  left: -9999px;
-}
-
-#formCta h2 {
-  margin-bottom: 24px;
-}
-
-#formCta form {
-  max-width: 420px;
-  background: #fff;
-  padding: 32px 24px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(255, 11, 11, 0.08);
-  text-align: left;
-}
-
-#formCta label {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2rem;
-  margin-bottom: 16px;
-}
-
-#formCta input,
-#formCta select,
-#formCta textarea {
-  margin-top: 6px;
-  padding: 12px 14px;
-  font-size: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  outline: none;
-}
-
-#formCta input:focus,
-#formCta textarea:focus,
-#formCta select:focus {
-  border-color: #343D68;
-}
-
-#formCta button {
-  width: 100%;
-  padding: 14px;
-  background: #343D68;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  background-image: url("../assets/contactForm/paperPlane.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 25px 25px;
-}
-
-#formCta button:hover {
-  background: #2b335a;
-  background-image: url("../assets/contactForm/paperPlane.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 25px 25px;
-}
-
-.blog-preview {
-  max-width: 640px;
-  margin: 80px auto;
-  text-align: center;
-}
-
-.blog-post-preview time {
-  font-size: 0.9rem;
-  opacity: 0.6;
-}
-
-/* FOOTER */
-.footer .container {
-  background-color: #343D68;
-  color: #fff;
-}
-
-.footer-wave {
-  display: block;
-  width: 100%;
-  height: 80px;
-}
-
-.footer-content {
-  max-width: 360px;
-  margin: 0 auto;
-  padding: 40px 16px;
-  text-align: left;
-}
-
-.footer-title {
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.social-links {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin-bottom: 24px;
-}
-
-.social-links img {
-  width: 28px;
-  height: 28px;
-}
-
-.footer-projects {
-  margin-top: 24px;
-  font-size: 14px;
-}
-
-.github-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  color: #7fd3ff;
-  text-decoration: none;
-}
-
-.github-link img {
-  width: 20px;
-  height: 20px;
-}
-
-.social-links img {
-  filter: brightness(0) invert(1);
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1037,11 +883,99 @@ main {
   background-size: 25px 25px;
 }
 
+/* MEDIA 768 PX */
+@media (min-width: 768px) {
+  /* FORM CTA */
+  .Contact-me {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+  }
+  .Contact-me img {
+    width: 500px;
+    height: auto;
+  }
+  #formCta fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  #formCta legend {
+    position: absolute;
+    left: -9999px;
+  }
+  #formCta h2 {
+    margin-bottom: 24px;
+  }
+  #formCta form {
+    max-width: 420px;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(255, 11, 11, 0.08);
+    text-align: left;
+  }
+  #formCta label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  #formCta input,
+  #formCta select,
+  #formCta textarea {
+    margin-top: 6px;
+    padding: 12px 14px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+  }
+  #formCta input:focus,
+  #formCta textarea:focus,
+  #formCta select:focus {
+    border-color: #343D68;
+  }
+  #formCta button {
+    width: 100%;
+    padding: 14px;
+    background: #343D68;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-image: url("../assets/contactForm/paperPlane.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px 25px;
+  }
+  #formCta button:hover {
+    background: #2b335a;
+    background-image: url("../assets/contactForm/paperPlane.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 25px 25px;
+  }
+  .blog-preview {
+    max-width: 640px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  .blog-post-preview time {
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+}
 /* FOOTER */
 .footer {
   position: relative;
   background-color: #343D68;
   color: #fff;
+}
+.footer p {
+  font-size: 1.4rem;
 }
 
 .footer-wave {
@@ -1054,7 +988,7 @@ main {
   max-width: 360px;
   margin: 0 auto;
   padding: 40px 16px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-title {
@@ -1064,15 +998,16 @@ main {
 
 .social-links {
   display: flex;
-  gap: 16px;
-  list-style: none;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
   padding: 0;
-  margin-bottom: 24px;
+  margin: 0;
+  list-style: none;
 }
 
-.social-links img {
-  width: 28px;
-  height: 28px;
+.social-links img, .github-link img {
+  width: clamp(22px, 10vw, 70px);
+  height: auto;
 }
 
 .footer-projects {
@@ -1083,17 +1018,66 @@ main {
 .github-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  margin-top: 8px;
+  margin: 8px auto 0;
   color: #7fd3ff;
   text-decoration: none;
 }
 
-.github-link img {
-  width: 20px;
-  height: 20px;
-}
-
 .social-links img {
   filter: brightness(0) invert(1);
+}
+
+/* MEDIA 768 PX */
+@media (min-width: 768px) {
+  .footer .container {
+    background-color: #343D68;
+    color: #fff;
+  }
+  .footer-wave {
+    display: block;
+    width: 100%;
+    height: 80px;
+  }
+  .footer-content {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 40px 16px;
+    text-align: left;
+  }
+  .footer-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .social-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .social-links img {
+    width: clamp(22px, 10vw, 70px);
+    height: auto;
+  }
+  .footer-projects {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  .github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    color: #7fd3ff;
+    text-decoration: none;
+  }
+  .github-link img {
+    width: 20px;
+    height: 20px;
+  }
+  .social-links img {
+    filter: brightness(0) invert(1);
+  }
 }

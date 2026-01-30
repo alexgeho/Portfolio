@@ -1,8 +1,77 @@
 /* FOOTER */
-  .footer {
-    position: relative;
+.footer {
+  position: relative;
+  background-color: #343D68;
+  color: #fff;
+
+  p{
+    font-size: 1.4rem;
+  }
+}
+
+.footer-wave {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.footer-content {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-links img, .github-link img {
+  width: clamp(22px, 10vw, 70px);
+  height: auto;
+}
+
+.footer-projects {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px auto 0;
+  color: #7fd3ff;
+  text-decoration: none;
+}
+
+
+
+.social-links img {
+  filter: brightness(0) invert(1);
+}
+
+
+/* MEDIA 768 PX */
+
+@media (min-width: 768px) {
+
+
+  .footer .container {
     background-color: #343D68;
     color: #fff;
+
   }
 
   .footer-wave {
@@ -32,8 +101,8 @@
   }
 
   .social-links img {
-    width: 28px;
-    height: 28px;
+    width: clamp(22px, 10vw, 70px);
+    height: auto;
   }
 
   .footer-projects {
@@ -58,3 +127,4 @@
   .social-links img {
     filter: brightness(0) invert(1);
   }
+}
