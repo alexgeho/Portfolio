@@ -1005,13 +1005,14 @@ main {
   list-style: none;
 }
 
-.social-links img, .github-link img {
+.social-links img,
+.github-link img {
   width: clamp(22px, 10vw, 70px);
   height: auto;
 }
 
 .footer-projects {
-  margin-top: 24px;
+  margin: 24px 0 0;
   font-size: 14px;
 }
 
@@ -1020,7 +1021,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 8px auto 0;
+  margin: 0;
   color: #7fd3ff;
   text-decoration: none;
 }
@@ -1060,10 +1061,6 @@ main {
   .social-links img {
     width: clamp(22px, 10vw, 70px);
     height: auto;
-  }
-  .footer-projects {
-    margin-top: 24px;
-    font-size: 14px;
   }
   .github-link {
     display: flex;
