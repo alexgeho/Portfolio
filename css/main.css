@@ -11,7 +11,6 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 header {
@@ -551,6 +550,10 @@ main {
   align-items: center;
 }
 
+#skills {
+  padding-bottom: 0;
+}
+
 /* MEDIA 768 PX */
 @media (min-width: 768px) {
   .title-section {
@@ -691,7 +694,10 @@ main {
   margin: 0 auto;
   background-color: #343d68;
   color: #fff;
-  padding: 5px 30px 30px;
+}
+
+.projects {
+  padding-top: 80px;
 }
 
 .projects-header {
@@ -699,12 +705,10 @@ main {
 }
 .projects-header h2 {
   font-size: 1.9rem;
-  margin-bottom: 1px;
   font-weight: 100;
 }
 .projects-header p {
   font-size: 1.25rem;
-  margin-top: 3px;
   opacity: 0.8;
 }
 
@@ -723,9 +727,10 @@ main {
 
 .internal {
   border: 2px solid #262c4c;
-  width: 340px;
-  min-height: 260px;
-  padding: 10px;
+  width: 90%;
+  max-width: 340px;
+  min-height: auto;
+  padding: 20px;
   margin: 20px;
   place-items: center;
   background-color: #262c4c;
@@ -776,7 +781,7 @@ main {
 .headlines p {
   margin: 15px 0px 30px;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .btn-project:hover {
@@ -792,23 +797,25 @@ main {
     color: #fff;
     padding: 5px 30px 60px;
   }
+  .projects {
+    padding-top: 80px;
+  }
   .projects-header {
     text-align: center;
   }
   .projects-header h2 {
-    font-size: 1.9rem;
-    margin-bottom: 1px;
+    font-size: 4.9rem;
+    margin: 0 0 8px;
     font-weight: 100;
   }
   .projects-header p {
     font-size: 1.25rem;
-    margin-top: 3px;
+    margin: 0;
     opacity: 0.8;
   }
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* MEDIA 1200 PX */
@@ -818,6 +825,10 @@ main {
   }
   .projects-header p {
     font-size: 2rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /* FORM CTA */
