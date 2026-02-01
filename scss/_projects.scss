@@ -47,10 +47,9 @@
 
  .internal {
      border: 2px solid #262c4c;
-     width: 90%;
+     width: 100%;
      max-width: 340px;
      min-height: auto;
-     padding: 20px;
      margin: 20px;
      place-items: center;
      background-color: #262c4c;
@@ -62,13 +61,13 @@
  }
 
  .img-block {
-     height: 270px;
-     max-width: 250px;
+     height: auto;
+     max-width: 100%;
      overflow: hidden;
      position: relative;
 
      img {
-         width: 240px;
+         width: 100%;
          height: auto;
          position: relative;
      }
