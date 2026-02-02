@@ -275,7 +275,6 @@ main {
 .hero-content p {
   font-size: 1.4rem;
   line-height: 1.6;
-  max-width: 520px;
   margin-bottom: 40px;
 }
 .hero-content button {
@@ -300,6 +299,7 @@ main {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
+/* MEDIA 768 PX */
 @media (min-width: 768px) {
   .hero {
     position: relative;
@@ -322,7 +322,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 620px;
+    max-width: 80%;
   }
   .hero-content h1 {
     font-size: 3rem;
@@ -334,7 +334,6 @@ main {
   .hero-content p {
     font-size: 1.7rem;
     line-height: 1.6;
-    max-width: 520px;
     margin-bottom: 40px;
   }
   .hero-content button {
@@ -409,7 +408,6 @@ main {
   .hero-content p {
     font-size: 2rem;
     line-height: 1.6;
-    max-width: 520px;
     margin-bottom: 40px;
   }
   .hero-content button {
@@ -1139,7 +1137,7 @@ main {
    HERO
 ========================= */
 .case-hero {
-  padding: 90px 0 70px;
+  border-radius: 18px;
   background: linear-gradient(180deg, #f9fafb 0%, #19317a 100%);
 }
 .case-hero .container {
@@ -1379,7 +1377,7 @@ main {
 ========================= */
 @media (min-width: 1200px) {
   .case-hero {
-    padding: 120px 0 90px;
+    padding: 120px 60px 90px;
   }
   .case-section {
     padding: 100px 0;

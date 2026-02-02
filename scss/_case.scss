@@ -10,6 +10,7 @@
   background: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 /* =========================
@@ -17,11 +18,12 @@
 ========================= */
 
 .case-hero {
-  padding: 90px 0 70px;
+  border-radius: 18px;
   background: linear-gradient(180deg, #f9fafb 0%, #19317a 100%);
 
   .container {
     text-align: left;
+    
   }
 
 
@@ -241,8 +243,9 @@
 ========================= */
 
 @media (min-width: 1200px) {
+
   .case-hero {
-    padding: 120px 0 90px;
+    padding: 120px 60px 90px;
   }
 
   .case-section {
