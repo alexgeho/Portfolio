@@ -702,7 +702,7 @@ main {
 .projects .container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #343d68;
+  background-color: #bcc0d5;
   color: #fff;
 }
 
@@ -805,7 +805,7 @@ main {
   .projects .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #343d68;
+    background-color: #ced1dd;
     color: #fff;
     padding: 5px 30px 60px;
   }
