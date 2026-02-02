@@ -1228,9 +1228,6 @@ main {
 /* =========================
    SECTIONS
 ========================= */
-.case-section {
-  padding: 80px 0;
-}
 .case-section h2 {
   font-size: clamp(2rem, 3.2vw, 2.7rem);
   font-weight: 400;
@@ -1249,7 +1246,6 @@ main {
    LISTS
 ========================= */
 .case-list {
-  margin-top: 20px;
   padding-left: 0;
   list-style: none;
 }
@@ -1276,7 +1272,6 @@ main {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 24px;
 }
 .case-tags li {
   padding: 8px 14px;
@@ -1378,8 +1373,5 @@ main {
 @media (min-width: 1200px) {
   .case-hero {
     padding: 120px 60px 90px;
-  }
-  .case-section {
-    padding: 100px 0;
   }
 }
