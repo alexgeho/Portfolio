@@ -702,7 +702,6 @@ main {
 .projects .container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #bcc0d5;
   color: #fff;
 }
 
@@ -711,6 +710,7 @@ main {
 }
 
 .projects-header {
+  color: #343d68;
   text-align: center;
 }
 .projects-header h2 {
@@ -806,7 +806,6 @@ main {
   .projects .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #ced1dd;
     color: #fff;
     padding: 5px 30px 60px;
   }
