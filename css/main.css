@@ -492,7 +492,7 @@ main {
   background-color: #E84849;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 100;
   padding: 15px 26px;
 }
@@ -606,7 +606,7 @@ main {
     background-color: #E84849;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 100;
     padding: 15px 26px;
   }
@@ -1138,10 +1138,8 @@ main {
 ========================= */
 .case-hero {
   border-radius: 18px;
-  background: linear-gradient(180deg, #f9fafb 0%, #19317a 100%);
-}
-.case-hero .container {
-  text-align: left;
+  background: linear-gradient(180deg, #f9fafb 40%, #19317a 100%);
+  padding: 20px;
 }
 
 .case-hero-buttons .back-to-portfolio-btn {
@@ -1161,7 +1159,7 @@ main {
   background-color: #E84849;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 100;
   padding: 15px 26px;
 }
@@ -1171,50 +1169,10 @@ main {
 }
 
 /* =========================
-   ACTIONS
-========================= */
-.case-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.case-actions .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 100;
-  color: white;
-  background-color: #E84849;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  font-size: 1rem;
-  font-weight: 100;
-  padding: 15px 26px;
-}
-.case-actions .btn:hover {
-  background-color: rgb(236.5553398058, 108.2446601942, 109.0466019417);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-}
-.case-actions .btn-primary {
-  background-color: #E84849;
-}
-.case-actions .btn-secondary {
-  background-color: #e5e7eb;
-  color: #111827;
-}
-.case-actions .btn-secondary:hover {
-  background-color: #d1d5db;
-}
-
-/* =========================
    PREVIEW
 ========================= */
 .case-preview {
-  padding: 60px 0 100px;
+  padding: 20px 0 20px;
 }
 .case-preview img {
   width: 100%;
@@ -1225,14 +1183,47 @@ main {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18), 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* PREVIEW IMAGE */
+.preview-img {
+  cursor: zoom-in;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 1000;
+}
+.lightbox img {
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  width: 50vw;
+  height: auto;
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /* =========================
    SECTIONS
 ========================= */
+.case-section {
+  padding: 10px;
+}
 .case-section h2 {
   font-size: clamp(2rem, 3.2vw, 2.7rem);
   font-weight: 400;
   color: #343d68;
-  margin-bottom: 22px;
   letter-spacing: -0.01em;
 }
 .case-section p {
@@ -1373,5 +1364,11 @@ main {
 @media (min-width: 1200px) {
   .case-hero {
     padding: 120px 60px 90px;
+  }
+  .case-hero h1 {
+    font-size: 3.5rem;
+  }
+  .case-hero h2 {
+    font-size: 2rem;
   }
 }

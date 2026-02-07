@@ -19,16 +19,8 @@
 
 .case-hero {
   border-radius: 18px;
-  background: linear-gradient(180deg, #f9fafb 0%, #19317a 100%);
-
-  .container {
-    text-align: left;
-    
-  }
-
-
-
-
+  background: linear-gradient(180deg, #f9fafb 40%, #19317a 100%);
+  padding: 20px;
 }
 
 .case-hero-buttons {
@@ -45,40 +37,12 @@
 
 }
 
-
-/* =========================
-   ACTIONS
-========================= */
-
-.case-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-
-  .btn {
-    @include mixins.button-small;
-  }
-
-  .btn-primary {
-    background-color: variables.$color-primary;
-  }
-
-  .btn-secondary {
-    background-color: #e5e7eb;
-    color: #111827;
-
-    &:hover {
-      background-color: #d1d5db;
-    }
-  }
-}
-
 /* =========================
    PREVIEW
 ========================= */
 
 .case-preview {
-  padding: 60px 0 100px;
+  padding: 20px 0 20px;
 
   img {
     width: 100%;
@@ -92,17 +56,52 @@
   }
 }
 
+/* PREVIEW IMAGE */
+.preview-img {
+  cursor: zoom-in;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 1000;
+
+  img {
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+
+  width: 50vw;
+  height: auto;
+}
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 /* =========================
    SECTIONS
 ========================= */
 
 .case-section {
 
+  padding: 10px;
+
   h2 {
     font-size: clamp(2rem, 3.2vw, 2.7rem);
     font-weight: 400;
     color: #343d68;
-    margin-bottom: 22px;
     letter-spacing: -0.01em;
   }
 
@@ -243,6 +242,17 @@
 
   .case-hero {
     padding: 120px 60px 90px;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+
+
   }
 
 
